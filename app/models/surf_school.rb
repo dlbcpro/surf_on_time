@@ -1,0 +1,2 @@
+class SurfSchool < ApplicationRecord
+end

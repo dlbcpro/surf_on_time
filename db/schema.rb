@@ -10,10 +10,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_25_090948) do
+ActiveRecord::Schema.define(version: 2020_08_25_095911) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "forecasts", force: :cascade do |t|
+    t.float "wind_direction"
+    t.string "wind_compass"
+    t.date "day"
+    t.string "weather"
+    t.float "water_temperature"
+    t.float "air_temperature"
+    t.integer "frequency"
+    t.float "wave_height"
+    t.bigint "spot_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["spot_id"], name: "index_forecasts_on_spot_id"
+  end
+
+  create_table "spots", force: :cascade do |t|
+    t.text "address"
+    t.string "country"
+    t.string "region"
+    t.string "continent"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "surf_schools", force: :cascade do |t|
+    t.text "description"
+    t.text "address"
+    t.string "email"
+    t.string "phone_number"
+    t.string "opening_hours"
+    t.float "latitude"
+    t.float "longitude"
+    t.text "meeting_point"
+    t.string "teacher"
+    t.string "lesson_type"
+    t.string "transport"
+    t.integer "rental_price_tendancy"
+    t.integer "lesson_price_tendancy"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +71,5 @@ ActiveRecord::Schema.define(version: 2020_08_25_090948) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "forecasts", "spots"
 end
