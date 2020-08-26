@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_25_140522) do
+ActiveRecord::Schema.define(version: 2020_08_26_133831) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,21 +38,20 @@ ActiveRecord::Schema.define(version: 2020_08_25_140522) do
 
   create_table "forecasts", force: :cascade do |t|
     t.float "wind_direction"
-    t.string "wind_compass"
+    t.string "wind_force"
     t.date "day"
     t.string "weather"
-    t.float "water_temperature"
     t.float "air_temperature"
     t.integer "frequency"
-    t.float "wave_height"
+    t.float "min_wave_height"
     t.bigint "spot_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "max_wave_height"
     t.index ["spot_id"], name: "index_forecasts_on_spot_id"
   end
 
   create_table "spots", force: :cascade do |t|
-    t.text "address"
     t.string "country"
     t.string "region"
     t.string "continent"
@@ -60,24 +59,23 @@ ActiveRecord::Schema.define(version: 2020_08_25_140522) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
   end
 
   create_table "surf_schools", force: :cascade do |t|
     t.text "description"
     t.text "address"
-    t.string "email"
+    t.string "website"
     t.string "phone_number"
     t.string "opening_hours"
-    t.float "latitude"
-    t.float "longitude"
     t.text "meeting_point"
-    t.string "teacher"
     t.string "lesson_type"
-    t.string "transport"
     t.integer "rental_price_tendancy"
     t.integer "lesson_price_tendancy"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "msw_id"
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|
