@@ -16,11 +16,17 @@
 }
 .name{
   position: relative;
+  margin-top: -95px;
   z-index: 2;
 }
 .pictos{
   width: 90px;
 }
+
+.card-forecast{
+  max-width: 980px;
+}
+
 
 .datas-content {
   // max-width: 100%;

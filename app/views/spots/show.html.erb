@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div class="name container mx-auto h-24 -mt-24 pl-5">
+<div class="name container mx-auto h-24 pl-5">
 
 <!-- région spot -->
   <p class="mont text-white">Maui</p>
@@ -17,94 +17,98 @@
   <h1 class="mont text-6xl font-bold text-white">PAEHI - JAWS</h1>
 </div>
 
-<!-- card jour forecast -->
-<div class="container mx-auto pt-8 pb-8">
+<div class="container mx-auto pt-8">
   <a class="roboto p-5 text-gray-500 hover:text-gray-600" href="#"> < Retour aux spots</a>
-  <div class="card flex m-5 rounded-lg shadow-lg mt-8 mb-8 overflow-hidden">
-    <div class="pictos text-center" >
+
+
+<!-- card jour forecast -->
+  <div class="card-forecast flex mx-auto m-5 rounded-lg shadow-lg my-8 overflow-hidden">
+    <div class="pictos text-center">
       <div class="h-12 bg-cl"></div>
-      <div class="h-20 bg-fo"></div>
-      <div class="picto h-20 bg-cl">picto</div>
-      <div class="picto h-20 bg-fo">picto</div>
-      <div class="picto h-24 bg-cl">picto</div>
-      <div class="picto h-20 bg-fo">picto</div>
+      <div class="h-12 bg-fo"></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/wave.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-fo flex justify-center items-center"><%= image_tag 'pictos/windb.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/winda.svg', class:"h-6" %></div>
+      <div class="picto h-12 bg-fo flex justify-center items-center"><%= image_tag 'pictos/winda.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/temperature 1.svg', class:"h-6" %></div>
     </div>
     <div class="card-content flex flex-col flex-grow">
       <div class="date h-12 flex items-center p-5">
-        <p class="mont">Lundi 5 Août</p>
+        <p class="mont font-bold">Lundi 14 Septembre</p>
       </div>
       <div class="datas-content flex-grow flex text-center">
-        <div class="h-20">
-          <div class="h-20 bg-cl pl-6 pr-6"></div>
-          <div class="h-20 pl-6"></div>
-          <div class="h-20 bg-cl pl-6"></div>
-          <div class="h-24 pl-6"></div>
-          <div class="h-20 bg-cl pl-6"></div>
-        </div>
-        <div class="datas flex flex-grow bg-pink-700">
-          <div class="data grid grid-cols-7 flex-grow bg-red-400 overflow-hidden">
+        
+        <div class="datas flex flex-grow">
+          <div class="data grid grid-cols-7 flex-grow overflow-hidden">
 
             <td class="">
               <div class="column ">
-                <p class="h-20 p-4 bg-gray-400">04:00</p>
-                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-                <p class="h-20 p-4 bg-gray-400">5 s</p>
-                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">04:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
               </div>
             </td>
             <td class="">
               <div class="column">
-                <p class="h-20 p-4 bg-gray-400">07:00</p>
-                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-                <p class="h-20 p-4 bg-gray-400">5 s</p>
-                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">07:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
               </div>
             </td>
             <td class="">
               <div class="column">
-                <p class="h-20 p-4 bg-gray-400">10:00</p>
-                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-                <p class="h-20 p-4 bg-gray-400">5 s</p>
-                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">10:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
               </div>
             </td>
             <td class="">
               <div class="column">
-                <p class="h-20 p-4 bg-gray-400">13:00</p>
-                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-                <p class="h-20 p-4 bg-gray-400">5 s</p>
-                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">13:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
               </div>
             </td>
             <td class="">
             <div class="column">
-              <p class="h-20 p-4 bg-gray-400">16:00</p>
-              <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-              <p class="h-20 p-4 bg-gray-400">5 s</p>
-              <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-              <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">16:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
             </div>
             </td>
             <td class="">
             <div class="column">
-              <p class="h-20 p-4 bg-gray-400">19:00</p>
-              <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-              <p class="h-20 p-4 bg-gray-400">5 s</p>
-              <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-              <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">19:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
             </div>
             </td>
             <td class="">
             <div class="column">
-              <p class="h-20 p-4 bg-gray-400">22:00</p>
-              <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-              <p class="h-20 p-4 bg-gray-400">5 s</p>
-              <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-              <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">22:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
             </div>
             </td>
 
@@ -113,16 +117,209 @@
 
           </div>
         </div>
-        <div class="droite h-20 bg-gray-400">
-          <div class="btn-droite h-20 bg-gray-400 pl-6 pr-6"></div>
-          <div class="h-20 pl-6 pr-6"></div>
-          <div class="h-20 bg-gray-400 pl-6 pr-6"></div>
-          <div class="h-24 pl-6 pr-6"></div>
-          <div class="h-20 bg-gray-400 pl-6 pr-6"></div>
-        </div>
+        
       </div>
     </div>
   </div>
+  <div class="card-forecast flex mx-auto m-5 rounded-lg shadow-lg my-8 overflow-hidden">
+    <div class="pictos text-center">
+      <div class="h-12 bg-cl"></div>
+      <div class="h-12 bg-fo"></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/wave.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-fo flex justify-center items-center"><%= image_tag 'pictos/windb.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/winda.svg', class:"h-6" %></div>
+      <div class="picto h-12 bg-fo flex justify-center items-center"><%= image_tag 'pictos/winda.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/temperature 1.svg', class:"h-6" %></div>
+    </div>
+    <div class="card-content flex flex-col flex-grow">
+      <div class="date h-12 flex items-center p-5">
+        <p class="mont font-bold">Mardi 15 Septembre</p>
+      </div>
+      <div class="datas-content flex-grow flex text-center">
+        
+        <div class="datas flex flex-grow">
+          <div class="data grid grid-cols-7 flex-grow overflow-hidden">
+
+            <td class="">
+              <div class="column ">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">04:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">07:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">10:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">13:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">16:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">19:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">22:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+
+
+
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="card-forecast flex mx-auto m-5 rounded-lg shadow-lg my-8 overflow-hidden">
+    <div class="pictos text-center">
+      <div class="h-12 bg-cl"></div>
+      <div class="h-12 bg-fo"></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/wave.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-fo flex justify-center items-center"><%= image_tag 'pictos/windb.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/winda.svg', class:"h-6" %></div>
+      <div class="picto h-12 bg-fo flex justify-center items-center"><%= image_tag 'pictos/winda.svg', class:"h-6" %></div>
+      <div class="picto h-20 bg-cl flex justify-center items-center"><%= image_tag 'pictos/temperature 1.svg', class:"h-6" %></div>
+    </div>
+    <div class="card-content flex flex-col flex-grow">
+      <div class="date h-12 flex items-center p-5">
+        <p class="mont font-bold">Mercredi 16 Septembre</p>
+      </div>
+      <div class="datas-content flex-grow flex text-center">
+        
+        <div class="datas flex flex-grow">
+          <div class="data grid grid-cols-7 flex-grow overflow-hidden">
+
+            <td class="">
+              <div class="column ">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">04:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">07:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">10:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">13:00</p>
+                <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+                <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+                <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+                <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">16:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">19:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-12 p-4 mont font-semibold flex items-center justify-center bg-cl">22:00</p>
+              <p class="h-20 p-4 flex items-center justify-center">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 flex flex-col items-center justify-center bg-cl"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6" %> Offshore</p>
+              <p class="h-20 p-4 flex items-center justify-center">W <br> 30km</p>
+              <p class="h-12 p-4 flex items-center justify-center bg-cl">5s</p>
+              <div class="h-20 p-4 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+
+
+
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- schools -->
