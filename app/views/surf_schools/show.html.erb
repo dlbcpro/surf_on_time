@@ -1,11 +1,13 @@
 <% content_for :with_logo do %>
 true
 <% end %>
-<div class="container">
-  <div class="background-image">
-    <%= image_tag "backgrounds/background school surf.png"  %>
+<div class="background-image w-full">
+  <%= image_tag "backgrounds/background school surf.jpg"  %>
+</div>
+<div class="container mx-auto">
+  <div class="return">
+    <%= link_to "< Retour au Spot", root_path %>
   </div>
-  <%= link_to "Retour au Spot", root_path %>
   <div class="mont">
     <h1>Ecole de surf - Jeannot Sport</h1>
   </div>
@@ -16,85 +18,84 @@ true
       Retrouvez-nous sur la plage emblématique de la Côte des Basques où nos
       moniteurs diplômés d’état et toute notre équipe feront de votre séjour
     un moment inoubliable ! </p>
-    <div class="font-color">
-      <div class="contain-map">
-        <div class="text-info">
-          <div class="lesson-type">
-            <p>Dans l'eau.</p>
-          </div>
-          <div class="meeting-point">
-            <p>Au spot.</p>
-          </div>
-          <div class="horaires">
-            <div><h3>HORAIRES:</h3></div>
-            <div>
-              <p>lundi</p>
-              <p>mardi</p>
-              <p>mercredi</p>
-              <p>jeudi</p>
-              <p>vendredi</p>
-              <p>samedi</p>
-              <p>dimanche</p>
-            </div>
-            <div>
-              <p>9:00 - 19:00</p>
-              <p>9:00 - 19:00</p>
-              <p>9:00 - 19:00</p>
-              <p>9:00 - 19:00</p>
-              <p>9:00 - 19:00</p>
-              <p>9:00 - 19:00</p>
-            </div>
-          </div>
-          <div class="tarifs">
-            <div class="tarifs-loc">
-              <div>
-                <h3>TARIFS:</h3>
-              </div>
-              <div>
-                <%= image_tag "pictos/surf_picto_school.png"  %>
-              </div>
-              <div>
-                <p>à partir de 9€/2h *</p>
-              </div>
-            </div>
-            <div class="tarifs-cours">
-              <div>
-                <%= image_tag "pictos/surf_picto_school.png"  %>
-              </div>
-              <p>+</p>
-              <div>
-                <%= image_tag "pictos/surf_picto_prof.png"  %>
-              </div>
-              <div>
-                <p>à partir de 30€/2h *</p>
-              </div>
-            </div>
-          </div>
-          <div class="tel">
-            <div>
-              <%= image_tag "pictos/surf_picto_tel.png"  %>
-            </div>
-            <div>
-              <p>06.70.60.50.40</p>
-            </div>
-          </div>
-          <div class="adresse">
-            <div class="picto nav">
-              <%= image_tag "pictos/surf_picto_nav.png"  %>
-            </div>
-            <div>
-              <p>20, rue des capucins 69000 Lyon</p>
-            </div>
-          </div>
-          <div class="site-web">
-            <%= link_to "Site web", root_path %>
-          </div>
-        </div>
-        <div class="google-map">
-          <%= image_tag "images/google_map.png"  %>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
+<div class="font-color">
+  <div class="contain-map">
+    <div class="text-info">
+      <div class="lesson-type">
+        <p>Dans l'eau.</p>
+      </div>
+      <div class="meeting-point">
+        <p>Au spot.</p>
+      </div>
+      <div class="horaires">
+        <div><h3>HORAIRES:</h3></div>
+        <div>
+          <p>lundi</p>
+          <p>mardi</p>
+          <p>mercredi</p>
+          <p>jeudi</p>
+          <p>vendredi</p>
+          <p>samedi</p>
+          <p>dimanche</p>
+        </div>
+        <div>
+          <p>9:00 - 19:00</p>
+          <p>9:00 - 19:00</p>
+          <p>9:00 - 19:00</p>
+          <p>9:00 - 19:00</p>
+          <p>9:00 - 19:00</p>
+          <p>9:00 - 19:00</p>
+        </div>
+      </div>
+      <div class="tarifs">
+        <div class="tarifs-loc">
+          <div>
+            <h3>TARIFS:</h3>
+          </div>
+          <div>
+            <%= image_tag "pictos/surf_picto_school.png"  %>
+          </div>
+          <div>
+            <p>à partir de 9€/2h *</p>
+          </div>
+        </div>
+        <div class="tarifs-cours">
+          <div>
+            <%= image_tag "pictos/surf_picto_school.png"  %>
+          </div>
+          <p>+</p>
+          <div>
+            <%= image_tag "pictos/surf_picto_prof.png"  %>
+          </div>
+          <div>
+            <p>à partir de 30€/2h *</p>
+          </div>
+        </div>
+      </div>
+      <div class="tel">
+        <div>
+          <%= image_tag "pictos/surf_picto_tel.png"  %>
+        </div>
+        <div>
+          <p>06.70.60.50.40</p>
+        </div>
+      </div>
+      <div class="adresse">
+        <div class="picto nav">
+          <%= image_tag "pictos/surf_picto_nav.png"  %>
+        </div>
+        <div>
+          <p>20, rue des capucins 69000 Lyon</p>
+        </div>
+      </div>
+      <div class="site-web">
+        <%= link_to "Site web", root_path %>
+      </div>
+    </div>
+    <div class="google-map">
+      <%= image_tag "images/google_map.png"  %>
+    </div>
+  </div>
 </div>
