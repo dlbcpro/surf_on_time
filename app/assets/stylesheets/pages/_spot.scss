@@ -1,9 +1,3 @@
-.logo{
-  height: 100px;
-  margin-top: -100px;
-  position: relative;
-  z-index: 1;
-}
 .banner{
   margin-top: -100px;
   position: relative;
@@ -27,11 +21,9 @@
 .pictos{
   width: 90px;
 }
-.data{
-  width: 200%;
-}
+
 .datas-content {
-  max-width: 100%;
+  // max-width: 100%;
 }
 .carte{
   overflow: hidden;
@@ -41,8 +33,7 @@
     position: relative;
     z-index: 0;
     img{
-      height: 100%;
-      max-width: none;
+      
     }
   }
   .card-content{
@@ -67,4 +58,11 @@
     }
   }
   
+}
+
+.bg-cl{
+  background-color: rgba(74, 187, 199, 0.2);
+}
+.bg-fo{
+  background-color: rgba(74, 187, 199, 0.4);
 }

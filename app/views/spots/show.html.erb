@@ -1,8 +1,7 @@
-<div class="logo">
-  <div class="container mx-auto p-5">
-    <a class="mont bleu-f font-bold text-2xl leading-7" href="#">SURF <br> ON <br> TIME</a>
-  </div>
-</div>
+<% content_for :with_logo do %>
+  true
+<% end %>
+
 <div class="banner">
   <div class="image">
     <%= image_tag 'backgrounds/michael-shannon-EebW8iPgH8s-unsplash 1.jpg' %>
@@ -10,40 +9,112 @@
 </div>
 
 <div class="name container mx-auto h-24 -mt-24 pl-5">
+
+<!-- région spot -->
   <p class="mont text-white">Maui</p>
+
+<!-- name spot -->
   <h1 class="mont text-6xl font-bold text-white">PAEHI - JAWS</h1>
 </div>
 
-<div class="container mx-auto bg-green-400 pt-8 pb-8">
-  <a class="roboto p-5 text-gray-500" href="#"> < Retour aux spots</a>
-  <div class="card flex m-5 bg-gray-500 rounded-md mt-8 mb-8">
+<!-- card jour forecast -->
+<div class="container mx-auto pt-8 pb-8">
+  <a class="roboto p-5 text-gray-500 hover:text-gray-600" href="#"> < Retour aux spots</a>
+  <div class="card flex m-5 rounded-lg shadow-lg mt-8 mb-8 overflow-hidden">
     <div class="pictos text-center" >
-      <div class="h-20 bg-gray-200"></div>
-      <div class="h-20 bg-gray-400"></div>
-      <div class="picto h-20 bg-gray-200">picto</div>
-      <div class="picto h-20 bg-gray-400">picto</div>
-      <div class="picto h-24 bg-gray-200">picto</div>
-      <div class="picto h-20 bg-gray-400">picto</div>
+      <div class="h-12 bg-cl"></div>
+      <div class="h-20 bg-fo"></div>
+      <div class="picto h-20 bg-cl">picto</div>
+      <div class="picto h-20 bg-fo">picto</div>
+      <div class="picto h-24 bg-cl">picto</div>
+      <div class="picto h-20 bg-fo">picto</div>
     </div>
-    <div class="card-content flex flex-col bg-pink-200 flex-grow">
-      <div class="date h-20">
+    <div class="card-content flex flex-col flex-grow">
+      <div class="date h-12 flex items-center p-5">
         <p class="mont">Lundi 5 Août</p>
       </div>
-      <div class="datas-content flex-grow flex text-center bg-pink-600">
-        <div class="gauche h-20 bg-gray-400">
-          <p class="btn-gauche h-20 bg-gray-400 pl-6 pr-6">fl</p>
+      <div class="datas-content flex-grow flex text-center">
+        <div class="h-20">
+          <div class="h-20 bg-cl pl-6 pr-6"></div>
           <div class="h-20 pl-6"></div>
-          <div class="h-20 bg-gray-400 pl-6"></div>
+          <div class="h-20 bg-cl pl-6"></div>
           <div class="h-24 pl-6"></div>
-          <div class="h-20 bg-gray-400 pl-6"></div>
+          <div class="h-20 bg-cl pl-6"></div>
         </div>
         <div class="datas flex flex-grow bg-pink-700">
-          <div class="data flex bg-red-400 overflow-hidden">
-            
+          <div class="data grid grid-cols-7 flex-grow bg-red-400 overflow-hidden">
+
+            <td class="">
+              <div class="column ">
+                <p class="h-20 p-4 bg-gray-400">04:00</p>
+                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 bg-gray-400">5 s</p>
+                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-20 p-4 bg-gray-400">07:00</p>
+                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 bg-gray-400">5 s</p>
+                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-20 p-4 bg-gray-400">10:00</p>
+                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 bg-gray-400">5 s</p>
+                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+              <div class="column">
+                <p class="h-20 p-4 bg-gray-400">13:00</p>
+                <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+                <p class="h-20 p-4 bg-gray-400">5 s</p>
+                <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+                <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+              </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-20 p-4 bg-gray-400">16:00</p>
+              <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 bg-gray-400">5 s</p>
+              <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+              <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-20 p-4 bg-gray-400">19:00</p>
+              <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 bg-gray-400">5 s</p>
+              <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+              <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+            <td class="">
+            <div class="column">
+              <p class="h-20 p-4 bg-gray-400">22:00</p>
+              <p class="h-20 p-4">0.6 <br> 1.3 m</p>
+              <p class="h-20 p-4 bg-gray-400">5 s</p>
+              <p class="h-24 p-4">picto <br> W <br> Offshore</p>
+              <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
+            </div>
+            </td>
+
+
+
+
           </div>
         </div>
         <div class="droite h-20 bg-gray-400">
-          <p class="btn-droite h-20 bg-gray-400 pl-6 pr-6">fl</p>
+          <div class="btn-droite h-20 bg-gray-400 pl-6 pr-6"></div>
           <div class="h-20 pl-6 pr-6"></div>
           <div class="h-20 bg-gray-400 pl-6 pr-6"></div>
           <div class="h-24 pl-6 pr-6"></div>
@@ -54,37 +125,44 @@
   </div>
 </div>
 
-<div class="schools-content bg-green-500">
-  <div class="container mx-auto bg-green-300 p-5">
-    <h2 class="bleu-f mont font-bold text-3xl"><emp class="bleu-c">Ecoles</emp> de surf proche du spot</h2>
+<!-- schools -->
+<div class="schools-content">
+  <div class="container mx-auto p-5">
+    <h2 class="bleu-f mont font-bold text-3xl"><emp class="bleu-c">Ecoles de surf</emp> proche du spot</h2>
   </div>
-  <div class="carte w-full bg-green-200">
-    <div class="img-content">
+  <div class="carte w-full">
+
+
+    <div class="img-content h-full w-full">
       <%= image_tag 'backgrounds/carte_schools.jpg', class: 'w-full' %>
     </div>
+
+
     <div class="card-content w-full h-full">
       <div class="container school-card mx-auto flex justify-end items-center my-auto px-5 h-full">
         
-        
-        <div class="card bg-green-400 rounded-lg flex flex-col">
-
-
+        <div class="card rounded-lg flex flex-col bg-white shadow-lg">
+<!-- image de l'école -->
           <%= image_tag 'divers/Surftraining-web-2018-5bis 1.jpg', class: 'w-full' %>
-          <div class="card-text flex-grow bg-pink-100 p-5 pb-0">
+          <div class="card-text flex-grow p-5">
 
 
-            <div class="text flex flex-col justify-between w-80%">
-              <h3 class="mont text-xl font-semibold whitespace-no-wrap">Ecole de surf - Biarritz Surf Training</h3>
+            <div class="text flex flex-col justify-between h-full">
+              <h3 class="mont text-xl font-semibold whitespace-no-wrap mb-6">Ecole de surf - Biarritz Surf Training</h3>
               <p class="roboto font-light text-sm">5km</p>
               <div class="flex">
                 <%= image_tag 'pictos/planches.svg' %>
+<!-- prix planche -->
                 <p class="px-2 roboto font-light text-sm">à partir de 9€/2h</p>
               </div>
-              <div class="flex">
-                <%= image_tag 'pictos/planches.svg' %>
-                <p class="px-2 roboto font-light text-sm"> + </p>
-                <%= image_tag 'pictos/prof-surf.svg' %>
-                <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
+              <div class="flex justify-between">
+                <div class="flex">
+                  <%= image_tag 'pictos/planches.svg' %>
+                  <p class="px-2 roboto font-light text-sm"> + </p>
+                  <%= image_tag 'pictos/prof-surf.svg' %>
+                  <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
+                </div>
+                <a class=" roboto font-light text-xs text-gray-600 hover:text-gray-800" href="">En savoir plus...</a>
               </div>
             </div>
 
@@ -100,179 +178,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <td class="">
-  <div class="column">
-    <p class="h-20 p-4 bg-gray-400">00:00</p>
-    <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-    <p class="h-20 p-4 bg-gray-400">5 s</p>
-    <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-    <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-  </div>
-</td>
-<td class="">
-  <div class="column">
-    <p class="h-20 p-4 bg-gray-400">01:00</p>
-    <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-    <p class="h-20 p-4 bg-gray-400">5 s</p>
-    <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-    <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-  </div>
-</td>
-<td class="">
-  <div class="column">
-    <p class="h-20 p-4 bg-gray-400">02:00</p>
-    <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-    <p class="h-20 p-4 bg-gray-400">5 s</p>
-    <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-    <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-  </div>
-</td>
-<td class="">
-  <div class="column">
-    <p class="h-20 p-4 bg-gray-400">00:03</p>
-    <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-    <p class="h-20 p-4 bg-gray-400">5 s</p>
-    <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-    <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-  </div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:03</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:04</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:05</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:06</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:07</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:08</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:09</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:10</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:11</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td>
-<td class="">
-<div class="column">
-  <p class="h-20 p-4 bg-gray-400">00:12</p>
-  <p class="h-20 p-4">0.6 <br> 1.3 m</p>
-  <p class="h-20 p-4 bg-gray-400">5 s</p>
-  <p class="h-24 p-4">picto <br> W <br> Offshore</p>
-  <div class="h-20 p-4 bg-gray-400 flex flex-col items-center"><%= image_tag 'pictos/social-network.svg', class:"h-6" %><p>18°</p></div>
-</div>
-</td> -->

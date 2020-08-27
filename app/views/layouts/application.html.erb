@@ -14,7 +14,9 @@
 
   <body>
     
-    <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar_with_logo' unless yield(:without_logo).to_s.strip == "true" %>
+    <%= render 'shared/navbar_without_logo' unless yield(:with_logo).to_s.strip == "true" %> 
+ 
     <%= render 'shared/flashes' %>
 
     <%= yield %>
