@@ -1,0 +1,92 @@
+.return {
+  margin-top: 40px;
+}
+
+.mont {
+  font-size: 40px;
+}
+
+.mont h1 {
+  padding: 20px 0px 20px 0px;
+}
+
+.date {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 0px 0px 10px 0
+}
+
+.font-roboto p {
+  font-size: 20px;
+}
+
+.description {
+  padding: 0px 0px 40px 0px;
+}
+
+.font-color {
+  background: #073354;
+  color: white;
+}
+
+.contain-map {
+  display: flex;
+}
+
+.text-info {
+  width: 50%;
+  padding: 10px 100px 10px 100px;
+
+}
+
+.horaires {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4ABBC7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.tarifs {
+  justify-content: space-between;
+  border-bottom: 1px solid #4ABBC7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.tarifs-loc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarifs-cours {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.adresse {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.google-map {
+  width: 50%;
+}
+
+.site-web {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100px;
+}
