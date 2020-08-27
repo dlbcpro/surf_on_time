@@ -1,10 +1,5 @@
-html {
-
-}
-
-.container {
-  max-width: 60px;
-  margin: auto;
+.return {
+  margin-top: 40px;
 }
 
 .mont {
@@ -21,12 +16,21 @@ html {
   padding: 0px 0px 10px 0
 }
 
+.font-roboto p {
+  font-size: 20px;
+}
+
 .description {
   padding: 0px 0px 40px 0px;
 }
 
-.font-roboto p {
-  font-size: 20px;
+.font-color {
+  background: #073354;
+  color: white;
+}
+
+.contain-map {
+  display: flex;
 }
 
 .text-info {
@@ -52,7 +56,6 @@ html {
   padding-bottom: 20px;
 }
 
-
 .tarifs-loc {
   display: flex;
   justify-content: space-between;
@@ -77,11 +80,6 @@ html {
   margin-bottom: 40px;
 }
 
-.font-color {
-  background: #073354;
-  color: white;
-}
-
 .google-map {
   width: 50%;
 }
@@ -91,8 +89,4 @@ html {
   border-radius: 4px;
   padding: 8px 12px;
   width: 100px;
-}
-
-.contain-map {
-  display: flex;
 }
