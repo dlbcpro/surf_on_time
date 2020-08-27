@@ -1,0 +1,87 @@
+
+<% content_for :without_logo do %>
+true
+<% end %>
+
+<div class="banner" >
+  <div class="container banner-container mx-auto items-center">
+    <div class="banner-content flex justify-around">
+      <div class="Logo-text mont">
+          <h1>SURF</h1>
+          <h1>ON</h1>
+          <h1>TIME</h1>
+      </div>
+
+      <div class="container form-content">
+        <p class="subtitle roboto">Trouve en 2 clics ton prochain surf trip avec les meilleures conditions</p>
+        <form class="form">
+          <div class="inline-block relative roboto">
+            <select class=" block appearance-none w-full bg-blue-900 border border-blue-900 hover:border-blue-800 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline roboto">
+              <option>Mon niveau</option>
+              <option>Débutant</option>
+              <option>Intermédiaire</option>
+              <option>Confirmé</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+          </div>
+          <input type="De">
+          <input type="à">
+
+          <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
+          Trouver un spot
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container flex items-center mx-auto p-5 title-find">
+  <div class="flex">
+    <h2 class="find-spot mont w-1/2">Nous trouvons <span class="find-best mont">le meilleur spot</span></h2>
+    <p class="p-5 detail roboto w-1/2">Ride on time analyse les <strong>conditons météorologiques</strong>, le vent et la <strong>difficulté du spot</strong> pour te proposer le spot qui correspondra à <strong>ton niveau</strong>.</p>
+  </div>
+</div>
+
+
+<div>
+    <%= image_tag 'images-home/parcours-home' %>
+</div>
+
+
+
+<div class="container">
+  <div>
+    <h2 class="find-spot mont">Les meilleurs <span class="find-best mont">spots du moment</span></h2>
+  </div>
+  <div class="flex justify-center">
+    <div class="inline-flex"><%= image_tag 'images-home/spot card home' %></div>
+    <div class="inline-flex"><%= image_tag 'images-home/spot card home' %></div>
+    <div class="inline-flex"><%= image_tag 'images-home/spot card home' %></div>
+  </div>
+</div>
+
+<div>
+  <h2 class="find-spot mont w-2/3">Profite pleinement de ton <span class="find-best mont">expérience</span></h2>
+  <div class="flex justify-center">
+    <p>Surf on time t’indique <strong>les écoles de surf</strong> les plus proches de ton spot, les tarifs et les meilleurs plans pour vivre une <strong>expérience incroyable</strong>...</p>
+    <div class="w-1/3">
+      <%= image_tag 'images-home/school surf home' %>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div>
+  <div>
+      <%= image_tag 'images-home/prevision-home' %>
+  <div>
+    <h2 class="find-spot mont">Ride dans des <span class="find-best mont">conditions optimales</span></h2>
+    <p>Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala </p>
+  </div>
+</div>
