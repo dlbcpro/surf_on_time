@@ -1,2 +1,318 @@
-<h1>Spots#index</h1>
-<p>Find me in app/views/spots/index.html.erb</p>
+<% content_for :with_logo do %>
+  true
+<% end %>
+
+<div class="banner-spots">
+  <div class="image">
+    <%= image_tag 'backgrounds/bg_spots.jpg' %>
+  </div>
+</div>
+
+
+<div class="title-spots container flex justify-end mx-auto pr-10">
+  <h1 class="mont text-6xl font-bold text-white">TES SPOTS</h1>
+</div>
+
+<!-- filtres -->
+<div class="container flex items-center mx-auto filters-spots h-24 bg-white p-10">
+  <div class="flex justify-between w-full">
+    <div class="flex">
+      <p class="roboto mr-4">Du 14/09/2020</p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto mr-4">Au 16/09/2020</p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto mr-4">Worlwide</p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto mr-4">Pays</p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto mr-4">Région</p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto mr-4">T° de l'eau/p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto mr-4">Météo</p>
+      <div class="h-full flex items-center">
+        <%= image_tag 'pictos/social-network.svg', class:"h-3" %>
+      </div>
+    </div>
+    <div class="flex">
+      <p class="roboto">12 / 32 spots</p>
+    </div>
+  </div>
+</div>
+
+<div class="container flex flex-col items-center mx-auto px-10">
+
+  <div class="grid grid-cols-3 gap-10">
+
+
+<!-- cards des spot -->
+    <div class="spot-card shadow-lg rounded-lg">
+    <a href="#">
+      <div class="img-spot">
+        <%= image_tag 'divers/card_spot_photo.jpg' %>
+        <div class="data-spot flex flex-col items-end p-5">
+          <div class="flex mb-4">
+            <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+            <div class="h-full flex items-center">
+              <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+            </div>
+          </div>
+          <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+        </div>
+      </div>
+      <div class="p-5">
+        <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+        <p class="roboto">Maui</p>
+      </div>
+    </a>
+    </div>
+    <div class="spot-card shadow-lg rounded-lg">
+    <a href="#">
+      <div class="img-spot">
+        <%= image_tag 'divers/card_spot_photo.jpg' %>
+        <div class="data-spot flex flex-col items-end p-5">
+          <div class="flex mb-4">
+            <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+            <div class="h-full flex items-center">
+              <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+            </div>
+          </div>
+          <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+        </div>
+      </div>
+      <div class="p-5">
+        <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+        <p class="roboto">Maui</p>
+      </div>
+    </a>
+    </div>
+    <div class="spot-card shadow-lg rounded-lg">
+    <a href="#">
+      <div class="img-spot">
+        <%= image_tag 'divers/card_spot_photo.jpg' %>
+        <div class="data-spot flex flex-col items-end p-5">
+          <div class="flex mb-4">
+            <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+            <div class="h-full flex items-center">
+              <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+            </div>
+          </div>
+          <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+        </div>
+      </div>
+      <div class="p-5">
+        <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+        <p class="roboto">Maui</p>
+      </div>
+    </a>
+    </div>
+    <div class="spot-card shadow-lg rounded-lg">
+    <a href="#">
+      <div class="img-spot">
+        <%= image_tag 'divers/card_spot_photo.jpg' %>
+        <div class="data-spot flex flex-col items-end p-5">
+          <div class="flex mb-4">
+            <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+            <div class="h-full flex items-center">
+              <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+            </div>
+          </div>
+          <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+        </div>
+      </div>
+      <div class="p-5">
+        <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+        <p class="roboto">Maui</p>
+      </div>
+    </a>
+    </div>
+    <div class="spot-card shadow-lg rounded-lg">
+      <a href="#">
+        <div class="img-spot">
+          <%= image_tag 'divers/card_spot_photo.jpg' %>
+          <div class="data-spot flex flex-col items-end p-5">
+            <div class="flex mb-4">
+              <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+              <div class="h-full flex items-center">
+                <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+              </div>
+            </div>
+            <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+          <p class="roboto">Maui</p>
+        </div>
+      </a>
+      </div>
+      <div class="spot-card shadow-lg rounded-lg">
+      <a href="#">
+        <div class="img-spot">
+          <%= image_tag 'divers/card_spot_photo.jpg' %>
+          <div class="data-spot flex flex-col items-end p-5">
+            <div class="flex mb-4">
+              <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+              <div class="h-full flex items-center">
+                <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+              </div>
+            </div>
+            <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+          <p class="roboto">Maui</p>
+        </div>
+      </a>
+      </div>
+      <div class="spot-card shadow-lg rounded-lg">
+      <a href="#">
+        <div class="img-spot">
+          <%= image_tag 'divers/card_spot_photo.jpg' %>
+          <div class="data-spot flex flex-col items-end p-5">
+            <div class="flex mb-4">
+              <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+              <div class="h-full flex items-center">
+                <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+              </div>
+            </div>
+            <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+          <p class="roboto">Maui</p>
+        </div>
+      </a>
+      </div>
+      <div class="spot-card shadow-lg rounded-lg">
+      <a href="#">
+        <div class="img-spot">
+          <%= image_tag 'divers/card_spot_photo.jpg' %>
+          <div class="data-spot flex flex-col items-end p-5">
+            <div class="flex mb-4">
+              <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+              <div class="h-full flex items-center">
+                <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+              </div>
+            </div>
+            <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+          <p class="roboto">Maui</p>
+        </div>
+      </a>
+      </div>
+      <div class="spot-card shadow-lg rounded-lg">
+        <a href="#">
+          <div class="img-spot">
+            <%= image_tag 'divers/card_spot_photo.jpg' %>
+            <div class="data-spot flex flex-col items-end p-5">
+              <div class="flex mb-4">
+                <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+                <div class="h-full flex items-center">
+                  <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+                </div>
+              </div>
+              <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+            <p class="roboto">Maui</p>
+          </div>
+        </a>
+        </div>
+        <div class="spot-card shadow-lg rounded-lg">
+        <a href="#">
+          <div class="img-spot">
+            <%= image_tag 'divers/card_spot_photo.jpg' %>
+            <div class="data-spot flex flex-col items-end p-5">
+              <div class="flex mb-4">
+                <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+                <div class="h-full flex items-center">
+                  <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+                </div>
+              </div>
+              <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+            <p class="roboto">Maui</p>
+          </div>
+        </a>
+        </div>
+        <div class="spot-card shadow-lg rounded-lg">
+        <a href="#">
+          <div class="img-spot">
+            <%= image_tag 'divers/card_spot_photo.jpg' %>
+            <div class="data-spot flex flex-col items-end p-5">
+              <div class="flex mb-4">
+                <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+                <div class="h-full flex items-center">
+                  <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+                </div>
+              </div>
+              <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+            <p class="roboto">Maui</p>
+          </div>
+        </a>
+        </div>
+        <div class="spot-card shadow-lg rounded-lg">
+        <a href="#">
+          <div class="img-spot">
+            <%= image_tag 'divers/card_spot_photo.jpg' %>
+            <div class="data-spot flex flex-col items-end p-5">
+              <div class="flex mb-4">
+                <p class="mr-4 text-white roboto text-lg">0.6 - 1.3m</p>
+                <div class="h-full flex items-center">
+                  <%= image_tag 'pictos/wavewhite.svg', class:"h-6" %>
+                </div>
+              </div>
+              <%= image_tag 'pictos/windwhite.svg', class:"h-5" %>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="mont font-semibold text-xl">Peahi - Jaws</p>
+            <p class="roboto">Maui</p>
+          </div>
+        </a>
+        </div>
+
+  </div>
+  <a class="mont bc-bleu-f flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium m-20" href="#">Plus de spots</a>
+
+
+</div>
