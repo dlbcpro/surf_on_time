@@ -18,7 +18,7 @@
 </div>
 
 <div class="container mx-auto pt-8">
-  <a class="roboto p-5 text-gray-500 hover:text-gray-600" href="#"> < Retour aux spots</a>
+  <%= link_to "< Retour aux spots", spots_path, class: "roboto p-5 text-gray-500 hover:text-gray-600" %>
 
 
 <!-- card jour forecast -->
@@ -319,7 +319,7 @@
 </div>
 
 <!-- schools -->
-<div class="schools-content">
+<div class="schools-content" id="schools-card">
   <div class="container mx-auto p-5">
     <h2 class="bleu-f mont font-bold text-3xl"><emp class="bleu-c">Ecoles de surf</emp> proche du spot</h2>
   </div>
@@ -355,7 +355,7 @@
                   <%= image_tag 'pictos/prof-surf.svg' %>
                   <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
                 </div>
-                <a class=" roboto font-light text-xs text-gray-600 hover:text-gray-800" href="">En savoir plus...</a>
+                <%= link_to "En savoir plus...", surf_schools_show_path, class: "roboto font-light text-xs text-gray-600 hover:text-gray-800" %>
               </div>
             </div>
 
