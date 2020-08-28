@@ -1,0 +1,43 @@
+.banner-spots{
+  margin-top: -100px;
+  position: relative;
+  z-index: 0;
+  height: 470px;
+  .image{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    img{
+      height: 100%;
+      max-width: none;
+    }
+  }
+}
+.title-spots{
+  position: relative;
+  margin-top: -120px;
+  z-index: 2;
+}
+.filters-spots{
+  position: relative;
+  margin-top: -25px;
+  z-index: 2;
+}
+.spot-card{
+  height: 400px;
+  width: 350px;
+  position: relative;
+  a{
+    width: 100%;
+    height: 100%;
+  }
+  .img-spot{
+    height: 75%;
+    .data-spot{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
