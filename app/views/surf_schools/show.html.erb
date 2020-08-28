@@ -27,90 +27,78 @@ true
   </div>
 </div>
 
+<div class="relative">
 
-
-
-
-
-
-
-
-<div class="font-color">
-  <div class="contain-map">
-    <div class="text-info">
-      <div class="lesson-type">
-        <p>Dans l'eau.</p>
-      </div>
-      <div class="meeting-point">
-        <p>Au spot.</p>
-      </div>
-      <div class="horaires">
-        <div><h3>HORAIRES:</h3></div>
-        <div>
-          <p>lundi</p>
-          <p>mardi</p>
-          <p>mercredi</p>
-          <p>jeudi</p>
-          <p>vendredi</p>
-          <p>samedi</p>
-          <p>dimanche</p>
-        </div>
-        <div>
-          <p>9:00 - 19:00</p>
-          <p>9:00 - 19:00</p>
-          <p>9:00 - 19:00</p>
-          <p>9:00 - 19:00</p>
-          <p>9:00 - 19:00</p>
-          <p>9:00 - 19:00</p>
-        </div>
-      </div>
-      <div class="tarifs">
-        <div class="tarifs-loc">
-          <div>
-            <h3>TARIFS:</h3>
-          </div>
-          <div>
-            <%= image_tag "pictos/surf_picto_school.png"  %>
-          </div>
-          <div>
-            <p>à partir de 9€/2h *</p>
-          </div>
-        </div>
-        <div class="tarifs-cours">
-          <div>
-            <%= image_tag "pictos/surf_picto_school.png"  %>
-          </div>
-          <p>+</p>
-          <div>
-            <%= image_tag "pictos/surf_picto_prof.png"  %>
-          </div>
-          <div>
-            <p>à partir de 30€/2h *</p>
-          </div>
-        </div>
-      </div>
-      <div class="tel">
-        <div>
-          <%= image_tag "pictos/surf_picto_tel.png"  %>
-        </div>
-        <div>
-          <p>06.70.60.50.40</p>
-        </div>
-      </div>
-      <div class="adresse">
-        <div class="picto nav">
-          <%= image_tag "pictos/surf_picto_nav.png"  %>
-        </div>
-        <div>
-          <p>20, rue des capucins 69000 Lyon</p>
-        </div>
-      </div>
-      <div class="site-web">
-        <%= link_to "Site web", root_path %>
-      </div>
-    </div>
-    <div class="google-map">
-      <%= image_tag "images/google_map.png"  %>
-    </div>
+  <div class="flex bc-bleu-f lala">
+    <div class="h-full w-1/2"></div>
+    <div class="h-full w-1/2"><%= image_tag "images/google_map.png", class: "h-full w-full" %></div>
   </div>
+
+
+
+  <div class="w-full absolute z-10 top-0 left-0">
+
+
+    <div class="container flex mx-auto flex lala text-white">
+      <div class="h-full w-1/2 ">
+        <div class="flex w-full section-school p-10">
+          <div class="mr-3">
+            <h3>HORAIRES :</h3>
+          </div>
+          <div>
+            <p>
+            Lundi : 9:00 - 19:00 <br>
+            Mardi : 9:00 - 19:00 <br>
+            Mercredi : 9:00 - 19:00 <br>
+            Jeudi : 9:00 - 19:00 <br>
+            Vendredi : 9:00 - 19:00 <br>
+            Samedi : 9:00 - 19:00 <br>
+            Dimanche : 9:00 - 19:00
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full section-school p-10">
+          <div class="mr-12">
+            <h3>TARIF :</h3>
+          </div>
+          <div>
+            <div class="flex mb-5">
+              <%= image_tag "pictos/surf_picto_school.png"  %>
+              <p class="ml-3">à partir de 9€/2h *</p>
+            </div>
+            <div class="flex mb-5">
+              <%= image_tag "pictos/surf_picto_school.png"  %>
+              <p class="mx-3">+</p>
+              <%= image_tag "pictos/surf_picto_prof.png"  %>
+              <p class="ml-3">à partir de 30€/2h *</p>
+            </div>
+            <div>
+              <p>Rendez-vous directement au spot</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full px-10 pt-10">
+          <div class="mr-16">
+            <%= image_tag "pictos/surf_picto_tel.png", class: "mb-2"  %>
+            <%= image_tag "pictos/surf_picto_nav.png"  %>
+          </div>
+          <div>
+            <p class="mb-6">06.70.60.50.40</p>
+            <p class="mb-6">20, rue des capucins 69000 Lyon</p>
+            <a href="https://www.glissexperience.com/" target="_blank" class="mont bc-bleu-f flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-2 font-normal hover:font-medium">Site web</a>
+          </div>
+        </div>
+      </div>
+      <div class="h-full w-1/2"></div>
+    </div>
+
+
+
+
+  </div>
+  
+
+
+
+
 </div>
