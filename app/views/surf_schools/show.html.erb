@@ -1,25 +1,40 @@
 <% content_for :with_logo do %>
 true
 <% end %>
-<div class="background-image w-full">
-  <%= image_tag "backgrounds/background school surf.jpg"  %>
-</div>
-<div class="container mx-auto">
-  <div class="return">
-    <%= link_to "< Retour au Spot", root_path %>
+
+
+<div class="banner-school">
+  <div class="image">
+    <%= image_tag 'backgrounds/background school surf.jpg' %>
   </div>
-  <div class="font-40 mont">
+</div>
+
+
+<div class="container mx-auto px-10 pt-10 pb-16">
+  <div class="return pb-8">
+    <%= link_to "< Retour au Spot", root_path, class: "roboto text-gray-500 hover:text-gray-600"%>
+  </div>
+  <div class="font-40 mont bleu-f">
     <h1>Ecole de surf - Jeannot Sport</h1>
   </div>
-  <h2 class="date">Ouverture du 15 Avril au 15 Octobre</h2>
-  <div class="font-roboto">
-    <p class="description">Avec plus de 30 ans d’existence, nous proposons des
+  <h2 class="date roboto font-bold py-4">Ouverture du 15 Avril au 15 Octobre</h2>
+  <div class="roboto font-roboto">
+    <p class="description w-3/4">Avec plus de 30 ans d’existence, nous proposons des
       cours de surf pour tous, dès 5 ans, quel que soit votre niveau.
       Retrouvez-nous sur la plage emblématique de la Côte des Basques où nos
       moniteurs diplômés d’état et toute notre équipe feront de votre séjour
     un moment inoubliable ! </p>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 <div class="font-color">
   <div class="contain-map">
     <div class="text-info">
