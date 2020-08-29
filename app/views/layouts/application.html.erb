@@ -9,16 +9,29 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <!-- TAILWIND -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- ANIM AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
     
     <%= render 'shared/navbar_with_logo' unless yield(:without_logo).to_s.strip == "true" %>
     <%= render 'shared/navbar_without_logo' unless yield(:with_logo).to_s.strip == "true" %> 
+    <%= render 'shared/navbar_empty' %> 
+
  
     <%= render 'shared/flashes' %>
 
     <%= yield %>
+
+    <!-- ANIM AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
