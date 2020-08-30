@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-399,-165.5)">
+        <g id="facebook" transform="matrix(1,0,0,1,-201,165.5)">
+            <rect x="600" y="0" width="50" height="50" style="fill:none;"/>
+            <g id="facebook1" serif:id="facebook" transform="matrix(0.0948079,0,0,0.0948079,625.139,25.101)">
+                <g transform="matrix(1,0,0,1,-256,-256)">
+                    <g>
+                        <g>
+                            <path d="M266,492L266,386.5" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:15px;"/>
+                            <path d="M265,492L98,492C54.991,492 20,457.009 20,414L20,98C20,54.991 54.991,20 98,20L414,20C457.009,20 492,54.991 492,98L492,414C492,457.009 457.009,492 414,492L331,492" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:15px;"/>
+                            <path d="M265.999,388L265.999,305.5C265.999,299.977 261.522,295.5 255.999,295.5L206.999,295.5L206.999,244.493L255.999,244.493C261.522,244.493 265.999,240.016 265.999,234.493L265.999,182.486C265.999,159.954 273.23,107.548 340.206,107.548L404.723,107.548L404.723,157.208L357.981,157.208C345.073,157.208 330,164.886 330,186.524L330,234.045C330,239.568 334.477,244.045 340,244.045L404.115,244.045L398.937,295.5L340,295.5C334.477,295.5 330,299.977 330,305.5L330,492" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:15px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
