@@ -16,6 +16,9 @@
 .placeholder-home::placeholder{
   color: white;
 }
+.placeholder-home:focus{
+  outline: none;
+}
 .select-level{
   width: 232px;
   height: 40px;

@@ -24,20 +24,44 @@
   margin-top: -25px;
   z-index: 2;
 }
+.date{
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.date::placeholder{
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+.date:focus{
+  outline: none;
+}
+
+select{
+  border: none;
+}
+
+
+
+
+
+
+
+
 .spot-card{
-  height: 400px;
+  height: 430px;
   width: 350px;
   position: relative;
-  a{
-    width: 100%;
-    height: 100%;
-  }
+  overflow: hidden;
+  
   .img-spot{
-    height: 75%;
-    .data-spot{
-      position: absolute;
-      top: 0;
-      right: 0;
+    height: 250px;
+    img{
+      height: 100%;
     }
   }
 }
