@@ -11,13 +11,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-.banner-container {
-  height: 730px;
-}
-.banner {
-  background-image: image-url('backgrounds/background-home.png');
-  background-size: cover;
-}
+
 
 // Flatpickr
 @import 'flatpickr/dist/flatpickr.css';
