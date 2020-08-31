@@ -35,3 +35,12 @@ document.addEventListener('turbolinks:load', () => {
 });
 
 import "home.js";
+
+  //Mapbox
+import mapboxgl 'from mapbox-gl';
+
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9tYWluLXNlcmFwaGluZSIsImEiOiJja2RhNnN3cWcwYjAxMnhtenNzcDVidGVwIn0._Hu0kFHBeaIUqAO4Ib7Jfg';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11'
+});
