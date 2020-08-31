@@ -13,6 +13,8 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- ANIM AOS JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FLICKITY -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
   </head>
 
@@ -22,7 +24,6 @@
     <%= render 'shared/navbar_without_logo' unless yield(:with_logo).to_s.strip == "true" %> 
     <%= render 'shared/navbar_empty' %> 
 
- 
     <%= render 'shared/flashes' %>
 
     <%= yield %>
@@ -38,6 +39,10 @@
     <script>
       AOS.init();
     </script>
+    <!-- FLICKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
 
   </body>
 </html>

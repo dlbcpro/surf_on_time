@@ -1,6 +1,12 @@
-.banner-content{
+.banner {
+  background-image: image-url('backgrounds/background-home.png');
+  background-size: cover;
   height: 730px;
 }
+.banner-container {
+  height: 100%;
+}
+
 .form-content{
   width: 420px;
   height: 439px;
@@ -57,6 +63,29 @@
   color: #4ABBC7;
   font-size: 36px;
 }
-.div-card-school{
-  margin-top: -460px;
+
+
+.spot-card-home{
+  height: 350px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  
+  .img-spot{
+    height: 250px;
+    img{
+      height: 100%;
+    }
+  }
+}
+
+.profite{
+  height: 530px;
+  width: 100%;
+}
+
+
+.flickity-viewport{
+  width: 80% !important;
+  margin: auto;
 }
