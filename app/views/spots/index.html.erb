@@ -35,7 +35,7 @@
       <option value="" class="roboto" > <p class="">Worldwide</p> </option>
       <option value="">Europe</option>
     </select>
-    
+
 <!-- pays -->
     <select class="select-pays roboto flex items-center bg-transparent focus:outline-none focus:shadow-none">
       <option value="" class="roboto" > <p class="">Pays</p> </option>
@@ -70,29 +70,28 @@
 </div>
 
 
-
-<!-- les cards spot -->
+  <!-- les cards spot -->
 <div class="container flex flex-col items-center mx-auto px-10">
   <div class="grid grid-cols-3 gap-10">
 
-
-<!-- card spot -->
-
-    <%= link_to spots_show_path do %>
-      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
-        <div class="img-spot">
-          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+<% @spots.each do |spot| %>
+  <!-- card spot -->
+      <%= link_to spot_path(spot, start: params[:start], end: params[:end]) do %>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+          <div class="img-spot">
+            <%= image_tag 'divers/hossegor-graviere.jpg' %>
+          </div>
+          <div class="py-4 px-6">
+            <p class="mont font-semibold text-xl bleu-f mb-2"><%= spot.name %></p>
+            <p class="roboto text-gray-500 mb-2"><%= spot.region %></p>
+            <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_min_wave_height(@start, @end) %>m - <%= spot.avg_max_wave_height(@start, @end) %>m</p> </div>
+            <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_air_temperature(@start, @end) %>°</p> </div>
+          </div>
         </div>
-        <div class="py-4 px-6">
-          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
-          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
-          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
-          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
-        </div>
-      </div>
-    <% end %>
-    
-    
+      <% end %>
+<% end %>
+
+
   </div>
 
 <!-- afficher plus -->

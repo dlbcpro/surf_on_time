@@ -1,4 +1,3 @@
-
 <% content_for :without_logo do %>
 true
 <% end %>
@@ -20,7 +19,7 @@ true
 
         <div class="form-content flex flex-col p-10 mt-20">
           <p class="subtitle roboto text-xl mb-10">Trouve en 2 clics ton prochain surf trip avec les meilleures conditions</p>
-          <form class="form">
+          <form class="form" action="<%= spots_path %>">
 
 
 
@@ -46,7 +45,8 @@ true
             </div>
             <input type="text" name="start" class="bc-bleu-t start-date rounded-md mb-2 text-left pl-5 placeholder-home" placeholder="De">
             <input type="text" name="end" class="bc-bleu-t end-date rounded-md mb-8 text-left pl-5 text-left pl-5 placeholder-home" placeholder="A">
-            <%= link_to "Trouver un spot", spots_path, class: "mont bc-bleu-t flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium text-left pl-5" %>
+
+            <input type="submit" class="mont bc-bleu-t flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium text-left pl-5" value="Trouver un spot">
 
 
 
