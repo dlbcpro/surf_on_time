@@ -35,7 +35,7 @@
       <option value="" class="roboto" > <p class="">Worldwide</p> </option>
       <option value="">Europe</option>
     </select>
-    
+
 <!-- pays -->
     <select class="select-pays roboto flex items-center bg-transparent focus:outline-none focus:shadow-none">
       <option value="" class="roboto" > <p class="">Pays</p> </option>
@@ -78,7 +78,7 @@
 
 <!-- card spot -->
 
-    <%= link_to spots_show_path do %>
+    <%= link_to spot_path(Spot.first) do %>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
         <div class="img-spot">
           <%= image_tag 'divers/hossegor-graviere.jpg' %>
@@ -91,8 +91,8 @@
         </div>
       </div>
     <% end %>
-    
-    
+
+
   </div>
 
 <!-- afficher plus -->

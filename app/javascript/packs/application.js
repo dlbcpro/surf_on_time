@@ -28,19 +28,14 @@ require("channels")
 
 // Internal imports, e.g:
 import { initFlatpickr } from '../plugins/flatpickr';
+import { initMapbox } from '../plugins/init_mapbox';
+import "home.js";
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  initMapbox();
   initFlatpickr();
 });
 
-import "home.js";
 
-  //Mapbox
-import mapboxgl 'from mapbox-gl';
-
-mapboxgl.accessToken = 'pk.eyJ1Ijoicm9tYWluLXNlcmFwaGluZSIsImEiOiJja2RhNnN3cWcwYjAxMnhtenNzcDVidGVwIn0._Hu0kFHBeaIUqAO4Ib7Jfg';
-const map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11'
-});

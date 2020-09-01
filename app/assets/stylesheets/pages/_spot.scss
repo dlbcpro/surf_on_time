@@ -43,13 +43,13 @@
     }
   }
   .card-content{
-    position: absolute;
-    z-index: 1;
-    top: 0;
+    // position: absolute;
+    // z-index: 1;
+    // top: 0;
     .school-card{
       .card{
-        height: 500px;
-        width: 350px;
+        height: 500px ;
+        width: 350px ;
         .card-text{
           .text{
             h3{
@@ -80,7 +80,7 @@
 .infos-block{
   right: 4px;
   bottom: 4px;
-  
+
   .infos-hover{
     display: none;
     opacity: 0;
@@ -100,4 +100,7 @@
     color: #153351;
     border-radius: 5px;
   }
+}
+.school-content{
+  padding: 0 !important;
 }
