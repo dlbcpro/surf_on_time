@@ -26,7 +26,7 @@ true
 
 
            <div class="range-slider">
-              <label class="text-white roboto" for="">Selectione ton niveau (hauteur de vague)</label>
+            <label class="text-white roboto" for="">Selectione ton niveau (hauteur de vague)</label>
 
 
               <span id="rs-bullet" class="rs-label roboto flex">0</span>
@@ -43,6 +43,11 @@ true
             </div>
 
 
+            <hr>
+            <!-- type: hidden -->
+            <input type="text" name="min" id="rangeMin">
+            <input type="text" name="max" id="rangeMax">
+            <input id="toto" class="rs-range" type="range">
 
 
 
@@ -104,20 +109,160 @@ true
 </div>
 
 
-<div>
+<div class="mb-12">
     <%= image_tag 'images-home/parcours-home.png' %>
 </div>
 
 
-<!-- gallery -->
+<!-- gallery glider-->
 
-<div class="glider">
-  <div> 1 </div>
-  <div> 2 </div>
-  <div> 3 </div>
-  <div> 4 </div>
-  <div> 5 </div>
-  <div> 6 </div>
+<div class="glider-contain container mx-auto">
+  <div class="pb-8 pt-16 px-10">
+    <h2 class="find-spot mont">Les meilleurs <span class="find-best mont">spots de la semaine</span></h2>
+  </div>
+  <div class="glider px-8 pb-5">
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-sm rounded-lg hover:shadow-lg transition-shadow duration-1000 ease-in-out">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="">
+
+      <%= link_to spots_show_path do %>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div class="img-spot">
+          <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        </div>
+        <div class="py-4 px-6">
+          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+
+  </div>
+
+  <button aria-label="Previous" class="glider-prev">«</button>
+  <button aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
 </div>
 
 <!-- <div class="container mx-auto mb-32">
@@ -138,26 +283,12 @@ true
 
 
 
-    <!-- <div class="carousel-cell mx-16">
-
-      <%= link_to spots_show_path do %>
-        <div class="spot-card-home shadow-xl rounded-lg hover:shadow-lg">
-          <div class="img-spot">
-            <%= image_tag 'divers/hossegor-graviere.jpg' %>
-          </div>
-          <div class="py-4 px-6">
-            <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
-            <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
-          </div>
-        </div>
-      <% end %>
-
-    </div> -->
+    
 
 
 <!-- 
   </div>
-</div> --> -->
+</div> -->
 
 
 
