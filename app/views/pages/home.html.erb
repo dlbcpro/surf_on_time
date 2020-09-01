@@ -12,22 +12,25 @@ true
       </div>
 
 
-      <div class="h-full w-full flex items-center">
 
+
+
+      <div class="h-full w-full flex items-center">
         <div class="form-content flex flex-col p-10">
+
+
           <p class="subtitle roboto text-xl mb-10">Trouve en 2 clics ton prochain surf trip avec les meilleures conditions</p>
+
+
           <form class="form" action="<%= spots_path %>">
 
 
 
 
-           <div class="range-slider">
-            <label class="text-white roboto" for="">Selectione ton niveau (hauteur de vague)</label>
-
-
+            <div class="range-slider">
+              <label class="text-white roboto" for="">Selectione ton niveau (hauteur de vague)</label>
               <span id="rs-bullet" class="rs-label roboto flex">0</span>
               <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="4" step="0.1">
-
             </div>
 
             <div class="box-minmax roboto">
@@ -38,14 +41,15 @@ true
               <p><span class="niveau">Débutant</span></p>
             </div>
 
-
             <hr>
+            <hr>
+            
             <!-- type: hidden -->
             <input type="text" name="min" id="rangeMin">
             <input type="text" name="max" id="rangeMax">
             <input id="toto" class="rs-range" type="range">
 
-            <div class="inline-block relative roboto mb-8">
+            <div class="inline-block relative roboto my-8">
               <select name="level "class="select-level bc-bleu-t block appearance-none w-full border-0 pr-32 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline roboto text-white text-left pl-5">
 
                 <option>Mon niveau</option>
@@ -59,7 +63,7 @@ true
             </div>
 
 
-            </div>
+            
 
             <label class="text-white roboto">Selectione tes dates</label>
 
@@ -68,14 +72,11 @@ true
 
             <input type="submit" class="mont bc-bleu-t flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium text-left pl-5" value="Trouver un spot">
 
-            <!-- <button class="mont bc-bleu-t flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium" type="button">
-            Trouver un spot
-            </button> -->
-
-
           </form>
-        </div>
 
+
+
+        </div>
       </div>
 
 
@@ -119,54 +120,36 @@ true
   <div class="glider px-8 pb-5">
 
 
-<% Spot.last(3).each do |spot| %>
-  <div class="">
 
-    <%= link_to spot_path(spot) do %>
-      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-sm rounded-lg hover:shadow-lg transition-shadow duration-1000 ease-in-out">
-        <div class="img-spot">
-          <%= image_tag 'divers/hossegor-graviere.jpg' %>
-        </div>
-        <div class="py-4 px-6">
-          <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
-          <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
-          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
-          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
-        </div>
+    <% Spot.last(3).each do |spot| %>
+      <div class="">
+      
+        <%= link_to spot_path(spot) do %>
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-sm rounded-lg hover:shadow-lg transition duration-1000 ease-in-out">
+            <div class="img-spot">
+              <%= image_tag 'divers/hossegor-graviere.jpg' %>
+            </div>
+            <div class="py-4 px-6">
+              <p class="mont font-semibold text-xl bleu-f mb-2">Hossegor (La gravière)</p>
+              <p class="roboto text-gray-500 mb-2">Soorts - Hossegor</p>
+              <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p>0.6 - 1.3m de hauteur</p> </div>
+              <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage2.svg', class: "h-8 w-8 mr-5" %> <p>18°C</p> </div>
+            </div>
+          </div>
+        <% end %>
       </div>
     <% end %>
+
   </div>
-<% end %>
 
   <button aria-label="Previous" class="glider-prev">«</button>
   <button aria-label="Next" class="glider-next">»</button>
   <div role="tablist" class="dots"></div>
+
+
 </div>
 
-<!-- <div class="container mx-auto mb-32">
-  <div class="pb-8 pt-16 px-10">
-    <h2 class="find-spot mont">Les meilleurs <span class="find-best mont">spots du moment</span></h2>
-  </div>
 
-
-
-
-  <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true  }'>
-    gallery-cell -->
-
-
-
-
-
-
-
-
-
-
-
-<!--
-  </div>
-</div> -->
 
 
 
