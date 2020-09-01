@@ -10,6 +10,10 @@ class Spot < ApplicationRecord
   end
 
   def avg_air_temperature(day_start, day_end)
-    forecasts.where("forecasts.day >=  ? AND forecasts.day < ?", day_start, day_end + 1).average(:air_temperature).round(2)
+    forecasts.where("forecasts.day >=  ? AND forecasts.day < ?", day_start, day_end + 1).average(:air_temperature).round
+  end
+
+  def avg_sea_temperature(day_start, day_end)
+    forecasts.where("forecasts.day >=  ? AND forecasts.day < ?", day_start, day_end + 1).average(:sea_temperature).round
   end
 end
