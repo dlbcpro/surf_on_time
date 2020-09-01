@@ -85,7 +85,7 @@
             <p class="mont font-semibold text-xl bleu-f mb-2"><%= spot.name %></p>
             <p class="roboto text-gray-500 mb-2"><%= spot.region %></p>
             <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_min_wave_height(@start, @end) %>m - <%= spot.avg_max_wave_height(@start, @end) %>m</p> </div>
-            <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_air_temperature(@start, @end) %>°</p> </div>
+            <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/soleil_nuage.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_air_temperature(@start, @end) %>°C <%= spot.avg_sea_temperature(@start, @end) %>°C</p> </div>
           </div>
         </div>
       <% end %>

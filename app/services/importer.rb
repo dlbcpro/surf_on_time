@@ -50,6 +50,7 @@ class Importer
         wind_force = element["wind"]["speed"]
         surf_wind_direction = element["wind"]["stringDirection"]
         air_temperature = element["condition"]["temperature"]
+        sea_temperature = element["condition"]["sst"]
         weather = element["condition"]["weatherText"]
 
         Forecast.create(
@@ -62,6 +63,7 @@ class Importer
           wind_force: wind_force,
           surf_wind_direction: surf_wind_direction,
           air_temperature: air_temperature,
+          sea_temperature: sea_temperature,
           weather: weather
         )
       end

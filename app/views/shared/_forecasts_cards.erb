@@ -11,14 +11,14 @@
         </div>
       </div>
       <div class="picto h-20 bg-fo flex justify-center items-center relative">
-        <%= image_tag 'pictos/wind.svg', class:"h-10" %>
+        <%= image_tag 'pictos/winda.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
           <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
           <p class="text-xs text-gray-500">?</p>
         </div>
       </div>
       <div class="picto h-20 bg-cl flex justify-center items-center relative">
-        <%= image_tag 'pictos/wind_force.svg', class:"h-10" %>
+        <%= image_tag 'pictos/windb.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
           <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
           <p class="text-xs text-gray-500">?</p>
@@ -57,10 +57,10 @@
               <div class="column ">
                 <p class="h-12 mont font-semibold flex items-center justify-center bg-cl"><%= forecast.day.strftime('%H:%M') %></p>
                 <p class="h-20 flex items-center justify-center"><%= forecast.min_wave_height %> <br> <%= forecast.max_wave_height %> m</p>
-                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> <%= forecast.surf_wind_direction %> (angle: <%= 'todo' %>)</p>
-                <p class="h-20 flex items-center justify-center">W (todo) <br> <%= forecast.wind_force %>km</p>
+                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> <%= forecast.surf_wind_direction %> <%= forecast.decorate.wind_angle %></p>
+                <p class="h-20 flex items-center justify-center"><%= forecast.wind_direction %><br> <%= forecast.wind_force %>km</p>
                 <p class="h-16 flex items-center justify-center bg-cl"><%= forecast.frequency %>s</p>
-                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p><%= forecast.air_temperature %>°</p></div>
+                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p><%= forecast.air_temperature %>°C<%= forecast.sea_temperature %>°C</p></div>
               </div>
             </td>
 
