@@ -1,0 +1,92 @@
+.container-su {
+display: flex;
+flex-height: 100vh;
+font-family: roboto;
+}
+.img-su {
+display: flex;
+box-shadow: 4px 4px 4px black;
+}
+.text-su {
+display: flex;
+flex-align: center;
+}
+.form-glob-su {
+display: flex;
+font-size: 20px;
+}
+.sign-up h1 {
+font-style: Montserrat;
+font-size: 36px;
+text-align: center;
+}
+.form-inputs-su-1 {
+display: flex;
+flex-direction: column;
+}
+.firstname-su {
+border-bottom: 1px solid black;
+padding: 20px;
+margin: 20px;
+}
+.email-su {
+border-bottom: 1px solid black;
+padding: 20px;
+margin: 20px;
+}
+.password-su {
+border-bottom: 1px solid black;
+padding: 20px;
+margin: 20px;
+}
+.form-inputs-su-2 {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.lastname-su {
+border-bottom: 1px solid black;
+padding: 20px;
+margin: 20px;
+}
+.lastname-su.hover {
+border:1px solid #153351
+}
+.username-su {
+border-bottom: 1px solid black;
+padding: 20px;
+margin: 20px;
+}
+.password_confirmation-su {
+border-bottom: 1px solid black;
+padding: 20px;
+margin: 20px;
+}
+.create {
+padding-left: 20px;
+font-size: 16px;
+}
+.form-actions-su {
+color: white;
+background-color:#153351;
+border-radius: 5px;
+border: 1px solid #153351;
+width: 60px;
+}
+.signup-su {
+padding: 20px;
+font-weight: bold;
+font-size: 26px;
+display: flex;
+justify-content: center;
+}
+.icons-su {
+display: flex;
+justify-content: center;
+}
+.fb {
+padding-right: 30px;
+}
+.g+ {
+padding-left: 30px;
+}
