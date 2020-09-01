@@ -30,6 +30,6 @@ class ForecastDecorator < Draper::Decorator
       "NNW" => 16,
     }
 
-    angles[object.surf_wind_direction] * 22.5
+    angles[object.wind_direction] * 22.5
   end
 end
