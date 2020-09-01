@@ -30,7 +30,7 @@ true
                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
               </div>
             </div>
-            
+
             <input type="text" name="start" class="bc-bleu-t start-date rounded-md mb-2 text-left pl-5 placeholder-home" placeholder="De">
             <input type="text" name="end" class="bc-bleu-t end-date rounded-md mb-8 text-left pl-5 text-left pl-5 placeholder-home" placeholder="A">
 
@@ -83,7 +83,7 @@ true
 
     <div class="carousel-cell mx-16">
 
-      <%= link_to spots_show_path do %>
+      <%= link_to spot_path(spot) do %>
         <div class="spot-card-home shadow-xl rounded-lg hover:shadow-lg">
           <div class="img-spot">
             <%= image_tag 'divers/hossegor-graviere.jpg' %>
@@ -236,7 +236,7 @@ true
 
       <h2 class="find-spot mont w-3/4 pb-10 text-right">Ride dans des <span class="find-best mont">conditions optimales</span></h2>
       <p class="roboto w-1/2 leading-8 text-lg">Lorem ipsum lalalal lala lala Lorem ipsum lalalal lala lala Lorem ipsum lalalal <strong>lala lala Lorem ipsum</strong> lalalal lala lala Lorem ipsum. </p>
-    
+
   </div>
 
 
