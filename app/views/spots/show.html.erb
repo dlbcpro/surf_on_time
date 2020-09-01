@@ -21,7 +21,6 @@
   <%= link_to "< Retour aux spots", spots_path, class: "roboto p-5 text-gray-500 hover:text-gray-600" %>
 
 
-
   <% (@start..@end).each do |day| %>
     <%= render 'shared/forecasts_cards', day: day, spot: @spot %>
   <% end %>
@@ -80,29 +79,3 @@
     </div>
   </div>
 </div>
-
-<!-- <script>
-
-  const infosblock = document.querySelectorAll(".infos-block");
-  const infos = document.querySelector(".infos");
-
-
-  console.log(infosblock);
-
-  const hoverinfos = () => (
-    infosblock.forEach( (infoblock) => {
-      console.log(infoblock)
-      infoblock.addEventListener("mouseenter", () => {
-        infoblock.firstElementChild.classList.remove("infos-nhover");
-        infoblock.firstElementChild.classList.add("infos-hover");
-      })
-      infoblock.addEventListener("mouseleave", () => {
-        infoblock.firstElementChild.classList.add("infos-nhover");
-        infoblock.firstElementChild.classList.remove("infos-hover");
-      })
-    })
-  );
-
-  hoverinfos();
-
-</script> -->
