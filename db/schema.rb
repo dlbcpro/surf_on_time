@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_31_072543) do
+ActiveRecord::Schema.define(version: 2020_09_01_121405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2020_08_31_072543) do
   end
 
   create_table "forecasts", force: :cascade do |t|
-    t.float "wind_direction"
+    t.string "wind_direction"
     t.integer "wind_force"
     t.datetime "day"
     t.string "weather"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_08_31_072543) do
     t.datetime "updated_at", precision: 6, null: false
     t.float "max_wave_height"
     t.string "surf_wind_direction"
+    t.float "sea_temperature"
     t.index ["spot_id"], name: "index_forecasts_on_spot_id"
   end
 

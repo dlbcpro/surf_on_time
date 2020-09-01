@@ -11,165 +11,18 @@
 <div class="name container mx-auto h-24 pl-5">
 
 <!-- région spot -->
-  <p class="mont text-white font-medium text-2xl">Soorts - Hossegor</p>
+  <p class="mont text-white font-medium text-2xl"><%= @spot.region %></p>
 
 <!-- name spot -->
-  <h1 class="mont text-6xl font-bold text-white">HOSSEGOR (LA GRAVIERE)</h1>
+  <h1 class="mont text-6xl font-bold text-white"><%= @spot.name %></h1>
 </div>
 
 <div class="container mx-auto pt-8">
   <%= link_to "< Retour aux spots", spots_path, class: "roboto p-5 text-gray-500 hover:text-gray-600" %>
 
-
-<!-- card jour forecast -->
-  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="card-forecast flex mx-auto m-5 rounded-lg shadow-lg my-8 overflow-hidden">
-    <div class="pictos text-center">
-      <div class="h-12 bg-cl"></div>
-      <div class="h-12 bg-fo"></div>
-      <div class="picto h-20 bg-cl flex justify-center items-center relative">
-        <%= image_tag 'pictos/wave.svg', class:"h-10" %>
-        <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
-        </div>
-      </div>
-      <div class="picto h-20 bg-fo flex justify-center items-center relative">
-        <%= image_tag 'pictos/wind.svg', class:"h-10" %>
-        <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
-        </div>
-      </div>
-      <div class="picto h-20 bg-cl flex justify-center items-center relative">
-        <%= image_tag 'pictos/wind_force.svg', class:"h-10" %>
-        <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
-        </div>
-      </div>
-      <div class="picto h-16 bg-fo flex justify-center items-center relative">
-        <%= image_tag 'pictos/periode_houle.svg', class:"h-10" %>
-        <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
-        </div>
-      </div>
-      <div class="picto h-20 bg-cl flex justify-center items-center relative">
-        <%= image_tag 'pictos/weather.svg', class:"h-10" %>
-        <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card-content flex flex-col flex-grow">
-      <div class="date h-12 flex items-center p-5">
-        <p class="mont font-bold text-lg">Lundi 14 Septembre</p>
-      </div>
-      <div class="datas-content flex-grow flex text-center">
-
-        <div class="datas flex flex-grow">
-          <div class="data grid grid-cols-7 flex-grow overflow-hidden">
-
-
-<!-- un forecast -->
-            <td class="">
-              <div class="column ">
-                <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">04:00</p>
-                <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-                <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-                <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-              </div>
-            </td>
-
-<!-- un forecast -->
-            <td class="">
-              <div class="column">
-                <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">07:00</p>
-                <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-                <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-                <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-              </div>
-            </td>
-
-<!-- un forecast -->
-            <td class="">
-              <div class="column">
-                <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">10:00</p>
-                <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-                <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-                <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-              </div>
-            </td>
-
-<!-- un forecast -->
-            <td class="">
-              <div class="column">
-                <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">13:00</p>
-                <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-                <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-                <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-              </div>
-            </td>
-
-<!-- un forecast -->
-            <td class="">
-            <div class="column">
-              <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">16:00</p>
-              <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-              <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-              <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-              <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-              <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-            </div>
-            </td>
-
-<!-- un forecast -->
-            <td class="">
-            <div class="column">
-              <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">19:00</p>
-              <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-              <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-              <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-              <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-              <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-            </div>
-            </td>
-
-<!-- un forecast -->
-            <td class="">
-            <div class="column">
-              <p class="h-12 mont font-semibold flex items-center justify-center bg-cl">22:00</p>
-              <p class="h-20 flex items-center justify-center">0.6 <br> 1.3 m</p>
-              <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> Offshore</p>
-              <p class="h-20 flex items-center justify-center">W <br> 30km</p>
-              <p class="h-16 flex items-center justify-center bg-cl">5s</p>
-              <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p>18°</p></div>
-            </div>
-            </td>
-
-
-
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
+  <% (@start..@end).each do |day| %>
+    <%= render 'shared/forecasts_cards', day: day, spot: @spot %>
+  <% end %>
 </div>
 
 <!-- schools -->
@@ -185,28 +38,3 @@
      data-spot="<%= @spot_marker.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
-<!-- <script>
-
-  const infosblock = document.querySelectorAll(".infos-block");
-  const infos = document.querySelector(".infos");
-
-
-  console.log(infosblock);
-
-  const hoverinfos = () => (
-    infosblock.forEach( (infoblock) => {
-      console.log(infoblock)
-      infoblock.addEventListener("mouseenter", () => {
-        infoblock.firstElementChild.classList.remove("infos-nhover");
-        infoblock.firstElementChild.classList.add("infos-hover");
-      })
-      infoblock.addEventListener("mouseleave", () => {
-        infoblock.firstElementChild.classList.add("infos-nhover");
-        infoblock.firstElementChild.classList.remove("infos-hover");
-      })
-    })
-  );
-
-  hoverinfos();
-
-</script> -->

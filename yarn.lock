@@ -6492,6 +6492,11 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
+rangeable@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/rangeable/-/rangeable-0.1.6.tgz#40ba684f452cc7aa3d16177d118fc3df4b186454"
+  integrity sha512-d56TXvDkWLck6azp4dXTRcBbi2KTwBuWkVZmn3fbN1ZWPBbo8OBUJVZ+sY8NiYANP6EurLWxFTFAHh4LoMHBgA==
+
 raw-body@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.0.tgz#a1ce6fb9c9bc356ca52e89256ab59059e13d0332"
