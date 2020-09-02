@@ -6,9 +6,13 @@ class SpotsController < ApplicationController
     set_end
 
     number_days = (@end - @start).to_i + 1
+    min = params[:min].present? ? params[:min] : 0
+    max = params[:max].present? ? params[:max] : 10
+
+    # binding.pry
     @spots = Spot.joins(:forecasts)
                  .where("forecasts.day >=  ? AND forecasts.day < ?", @start, @end + 1)
-                 .where("forecasts.min_wave_height > ?", 0.7)
+                 .where("forecasts.min_wave_height >= ? AND forecasts.max_wave_height <= ?", min, max)
                  .group(:id)
                  .having("COUNT(distinct DATE(forecasts.day)) = ?", number_days)
   end
@@ -43,7 +47,7 @@ class SpotsController < ApplicationController
   # end
 
   def set_start
-    if params[:start]
+    if params[:start].present?
       @start = params[:start].to_date
     else
       @start = Date.today
@@ -51,7 +55,7 @@ class SpotsController < ApplicationController
   end
 
   def set_end
-    if params[:end]
+    if params[:end].present?
       @end = params[:end].to_date
     else
       @end = Date.today + 6
