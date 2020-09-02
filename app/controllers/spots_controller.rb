@@ -42,6 +42,17 @@ class SpotsController < ApplicationController
     params.require(:spot).permit(:name, :region, :continent, :latitude, :longitude)
   end
 
+  # def set_dates
+  #   if params[:test].present?
+  #     dates = params[:test].split(" to ").map(&:to_date)
+
+  #   else
+  #     dates = [Date.today, Date.today + 6]
+  #   end
+  #   @start = dates.first
+  #   @end = dates.last
+  # end
+
   def set_start
     if params[:start].present?
       @start = params[:start].to_date
