@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g transform="matrix(1,0,0,1,-200,0)">
+        <rect id="nuage" x="200" y="0" width="50" height="50" style="fill:none;"/>
+        <g id="nuage1" serif:id="nuage">
+            <g id="noun_cloudy_854627" transform="matrix(0.757024,0,0,0.757024,223.746,33.186)">
+                <g transform="matrix(1,0,0,1,-50,-62.5)">
+                    <path d="M58.756,52.207C57.95,52.207 57.173,52.32 56.427,52.512C55.367,47.772 51.142,44.228 46.083,44.228C40.849,44.228 36.512,48.022 35.644,53.007C34.492,52.496 33.219,52.206 31.877,52.206C26.735,52.206 22.567,56.374 22.567,61.516C22.567,66.658 26.735,70.826 31.877,70.826L58.756,70.826C63.898,70.826 68.066,66.658 68.066,61.516C68.067,56.376 63.898,52.207 58.756,52.207Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                    <path d="M71.232,58.403C76.374,58.403 80.542,54.235 80.542,49.093C80.542,43.951 76.374,39.783 71.232,39.783C70.426,39.783 69.649,39.896 68.903,40.088C67.843,35.348 63.618,31.804 58.559,31.804C53.325,31.804 48.988,35.598 48.12,40.583C46.968,40.072 45.695,39.782 44.353,39.782C40.816,39.782 37.74,41.754 36.164,44.659" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
