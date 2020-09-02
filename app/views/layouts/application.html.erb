@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SurfOnTime</title>
+    <title>Surf On Time | Ton prochain surf trip !</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -15,15 +15,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- GLIDER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-
-
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
 
   <body>
-    
+
     <%= render 'shared/navbar_with_logo' unless yield(:without_logo).to_s.strip == "true" %>
-    <%= render 'shared/navbar_without_logo' unless yield(:with_logo).to_s.strip == "true" %> 
-    <%= render 'shared/navbar_empty' %> 
+    <%= render 'shared/navbar_without_logo' unless yield(:with_logo).to_s.strip == "true" %>
+    <%= render 'shared/navbar_empty' %>
 
     <%= render 'shared/flashes' %>
 
