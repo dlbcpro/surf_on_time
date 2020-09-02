@@ -48,7 +48,7 @@
       <div class="datas-content flex-grow flex text-center">
 
         <div class="datas flex flex-grow">
-          <div class="data grid grid-cols-7 flex-grow overflow-hidden">
+          <div class="data grid grid-cols-6 flex-grow overflow-hidden">
 
 
           <% @spot.forecasts.where(day: day.all_day).select {|f| f.day.hour >= 6}.each do |forecast| %>
@@ -57,10 +57,20 @@
               <div class="column ">
                 <p class="h-12 mont font-semibold flex items-center justify-center bg-cl"><%= forecast.day.strftime('%H:%M') %></p>
                 <p class="h-20 flex items-center justify-center"><%= forecast.min_wave_height %> <br> <%= forecast.max_wave_height %> m</p>
-                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs"><%= image_tag 'pictos/fleche-verte.svg', class:"h-6 mb-2" %> <%= forecast.surf_wind_direction %> <%= forecast.decorate.wind_angle %></p>
+
+                <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs" id="wind-arrow" data-direction="<%= forecast.surf_wind_direction %>" data-angle="<%= forecast.decorate.wind_angle %>"><%= image_tag 'pictos/fleche-verte.svg', class:"green-arrow arrow h-6 mb-2" %><%= image_tag 'pictos/fleche-rouge.svg', class:"red-arrow arrow h-6 mb-2" %><%= image_tag 'pictos/fleche-jaune.svg', class:"yellow-arrow arrow h-6 mb-2" %> <%= forecast.surf_wind_direction %></p>
+                
                 <p class="h-20 flex items-center justify-center"><%= forecast.wind_direction %><br> <%= forecast.wind_force %>km</p>
                 <p class="h-16 flex items-center justify-center bg-cl"><%= forecast.frequency %>s</p>
-                <div class="h-20 flex flex-col justify-center items-center"><%= image_tag 'pictos/soleil_nuage.svg', class:"h-10" %><p><%= forecast.air_temperature %>°C<%= forecast.sea_temperature %>°C</p></div>
+
+                <div class="h-20 flex flex-col justify-center items-center" id="weather" data-weather="<%= forecast.weather %>">
+                  <%= image_tag 'pictos/soleil_nuage2.svg', class:"h-10 soleil-nuage2" %>
+                  <%= image_tag 'pictos/soleil.svg', class:"h-10 soleil" %>
+                  <%= image_tag 'pictos/pluie.svg', class:"h-10 pluie" %>
+                  <%= image_tag 'pictos/orage.svg', class:"h-10 orage" %>
+                  <%= image_tag 'pictos/nuage.svg', class:"h-10 nuage" %>
+                  <p><%= forecast.air_temperature %>°C | <%= forecast.sea_temperature %>°C</p>
+                </div>
               </div>
             </td>
 

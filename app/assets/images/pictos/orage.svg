@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g id="orage" transform="matrix(0.231481,0,0,0.204918,219.471,-105.107)">
+        <rect x="-948.114" y="512.924" width="216" height="244" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="-948.114" y="512.924" width="216" height="244"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g id="noun_cloudy_854622" transform="matrix(3.32113,0,0,3.75165,-841.22,678.547)">
+                <g transform="matrix(1,0,0,1,-50,-62.5)">
+                    <path d="M58.222,40.459C57.416,40.459 56.639,40.572 55.893,40.764C54.833,36.024 50.608,32.48 45.549,32.48C40.315,32.48 35.978,36.274 35.11,41.259C33.958,40.748 32.685,40.458 31.343,40.458C26.201,40.458 22.033,44.626 22.033,49.768C22.033,54.91 26.201,59.078 31.343,59.078L58.222,59.078C63.364,59.078 67.532,54.91 67.532,49.768C67.532,44.626 63.364,40.459 58.222,40.459Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                    <path d="M70.698,46.655C75.84,46.655 80.008,42.487 80.008,37.345C80.008,32.203 75.84,28.035 70.698,28.035C69.892,28.035 69.115,28.148 68.369,28.34C67.309,23.6 63.084,20.056 58.025,20.056C52.791,20.056 48.454,23.85 47.586,28.835C46.434,28.324 45.161,28.034 43.819,28.034C40.282,28.034 37.206,30.006 35.63,32.911" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                    <path d="M35.518,59.275L30.389,70.183L38.222,69.403L33.555,82.07" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                    <path d="M48.566,59.293L43.437,70.201L51.27,69.421L46.604,82.088" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                    <path d="M60,65.333L57.819,69.946L65.167,69.167L61.493,77.833" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
