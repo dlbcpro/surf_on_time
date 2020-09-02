@@ -3,6 +3,10 @@ import flatpickr from "flatpickr";
 
 const initFlatpickr = () => {
 
+
+
+
+
   flatpickr(".start-date", {
     altInput: true,
     altFormat: "F j, Y",
@@ -13,9 +17,24 @@ const initFlatpickr = () => {
     altFormat: "F j, Y",
     dateFormat: "d-m-Y",
   })
+
+  flatpickr(".test", {
+    mode: "range",
+    // minDate: "today",
+    dateFormat: "Y-m-d",
+    
+})
 }
 
+
+
   export { initFlatpickr }
+
+
+
+
+
+
 
 
   //  if (bookingForm) {

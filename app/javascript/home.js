@@ -52,10 +52,10 @@ const rangeable = new Rangeable(input, {
   mutiple: true,
   tooltips: "always",
   min: 0,
-  max: 100,
-  step: 1,
+  max: 10,
+  step: 0.5,
   
-  value: [50, 70],
+  value: [0, 10],
   vertical: false,
   controls: undefined,
   onInit: function() {
@@ -66,14 +66,17 @@ const rangeable = new Rangeable(input, {
   },
   onChange: function(e) {
       // do something when the value changes
-
-
-    document.querySelector('#rangeMin').value = e[0]
-    document.querySelector('#rangeMax').value = e[1]
+    const min = document.querySelector('#rangeMin');
+    const max = document.querySelector('#rangeMax');
+    console.log(min.value);
+    console.log(max.value);
+    min.value = e[0]
+    max.value = e[1]
     },
   onEnd: function() {
       // do something on mouseup/touchend
   }
+
 });
 
 
