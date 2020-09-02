@@ -8,10 +8,6 @@ phone_number: '+33660876290', opening_hours: 'monday, 09:00–17:00, tuesday, 09
 meeting_point: 'At School', lesson_type: 'Inside Water', lesson_price_tendancy: '30', rental_price_tendancy: '10')
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-school01 = SurfSchool.create!(name: 'Nomad Surf School', description: 'Ecole de surf au Cap-Ferret', address: '5 Rue des Bernaches, 33970 Lège-Cap-Ferret', website: 'https://nomadsurf.net/',
-phone_number: '+33660876290', opening_hours: 'monday, 09:00–17:00, tuesday, 09:00–17:00, wednedsay, 09:00–17:00, thursday, 09:00–17:00, friday, 09:00–17:00, saturday, 09:00–17:00, sunday, 09:00–17:00',
-meeting_point: 'At School', lesson_type: 'Inside Water', lesson_price_tendancy: '30', rental_price_tendancy: '10')
-
 school02 = SurfSchool.create!(name: 'Cap Ferret Surf School', description: 'Ecole de surf au Cap-Ferret', address: 'Plage du Truc Vert, 33970 Lège-Cap-Ferret', website: 'https://capferretsurfschool.com/',
 phone_number: '+33698712033', opening_hours: 'monday, 09:00–19:00, tuesday, 09:00–19:00, wednedsay, 09:00–19:00, thursday, 09:00–19:00, friday, 09:00–19:00, saturday, 09:00–19:00, sunday, 09:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Outside Water',
 lesson_price_tendancy: '25', rental_price_tendancy: '15')
