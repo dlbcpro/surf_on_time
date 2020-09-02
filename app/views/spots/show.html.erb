@@ -32,9 +32,56 @@
   </div>
 </div>
 <!-- map schools -->
-    <div id="map"
-     style="width: 100%; height: 600px;"
-     data-markers="<%= @markers.to_json %>"
-     data-spot="<%= @spot_marker.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+<div id="map"
+    class="relative"
+    style="width: 100%; height: 600px;"
+    data-markers="<%= @markers.to_json %>"
+    data-spot="<%= @spot_marker.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+
+  <div class="absolute top-0 bottom-0 right-0 p-10 z-30 flex items-center">
+<!--     <div class="bg-white p-4 mr-10"><%= @surf_schools.first.name %></div>
+
+ -->
+    <div class="card-content w-full h-full">
+      <div class="container school-card mx-auto flex justify-end items-center my-auto h-full">
+
+        <div class="card rounded-lg flex flex-col bg-white shadow-lg">
+<!-- image de l'école -->
+          <%= image_tag 'divers/Surftraining-web-2018-5bis 1.jpg', class: 'w-full' %>
+          <div class="card-text flex-grow p-5">
+
+
+            <div class="text flex flex-col justify-between h-full">
+              <h3 class="mont text-xl font-semibold whitespace-no-wrap mb-6"><%= @surf_schools.first.name %>
+</h3>
+              <p class="roboto font-light text-sm"><%= distance_in_km(@spot, @surf_schools.first).round(2) %>km</p>
+              <div class="flex">
+                <%= image_tag 'pictos/planches.svg' %>
+<!-- prix planche -->
+                <p class="px-2 roboto font-light text-sm">à partir de 9€/2h</p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex">
+                  <%= image_tag 'pictos/planches.svg' %>
+                  <p class="px-2 roboto font-light text-sm"> + </p>
+                  <%= image_tag 'pictos/prof-surf.svg' %>
+                  <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
+                </div>
+                <%= link_to "En savoir plus...", surf_school_path(@surf_schools.first), class: "roboto font-light text-xs text-gray-600 hover:text-gray-800" %>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+</div>
+</div>
 
