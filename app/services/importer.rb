@@ -118,8 +118,6 @@ class Importer
       region: ''
     )
 
-    ##############################################
-
     Spot.create(
       name: '',
       msw_id: '',
@@ -127,6 +125,8 @@ class Importer
       country: 'FRANCE',
       region: ''
     )
+
+    ##############################################
 
     Spot.create(
       name: '',
