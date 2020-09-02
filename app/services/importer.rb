@@ -11,12 +11,23 @@ class Importer
   end
 
   def self.create_spots
+    # data = JSON.parse(File.read("#{Rails.root}/app/services/#{spot.msw_id}.json"))
+
+    # data.each do
     Spot.create(
       name: 'HOSSEGOR (LA GRAVIERE)',
       msw_id: '38',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS-HOSSEGOR'
+      region: 'SOORTS - HOSSEGOR'
+    )
+
+    Spot.create(
+      name: 'LES ESTAGNOTS',
+      msw_id: '890',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'SOORTS - HOSSEGOR'
     )
 
     Spot.create(
@@ -28,16 +39,196 @@ class Importer
     )
 
     Spot.create(
+      name: 'VIEUX BOUCAU',
+      msw_id: '64',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'LANDES'
+    )
+
+    Spot.create(
       name: 'LA TORCHE',
       msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'FINISTERE-SOUTH'
+      region: 'FINISTERE - SOUTH'
+    )
+
+    Spot.create(
+      name: 'LA TORCHE',
+      msw_id: '72',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'FINISTERE - SOUTH'
+    )
+
+    Spot.create(
+      name: 'GOLD BEACH',
+      msw_id: '5567',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'MANCHE'
+    )
+
+    Spot.create(
+      name: 'OMAHA BEACH',
+      msw_id: '5553',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'MANCHE'
+    )
+
+    Spot.create(
+      name: 'BLANCS-SABLONS',
+      msw_id: '74',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'BRITTANY - NORTH'
+    )
+
+    Spot.create(
+      name: 'LE PETIT MINOU',
+      msw_id: '1520',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'BRITTANY - NORTH'
+    )
+
+    Spot.create(
+      name: 'PLAGE DU LOCH',
+      msw_id: '1557',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'MORBIHAN & LOIRE ATLANTIQUE'
+    )
+
+    Spot.create(
+      name: 'LA CÔTE SAUVAGE',
+      msw_id: '1556',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'MORBIHAN & LOIRE ATLANTIQUE'
+    )
+
+    Spot.create(
+      name: 'LES DUNES',
+      msw_id: '1570',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'VENDÉE'
+    )
+
+    Spot.create(
+      name: 'LES SABLES-D\'OLONNE',
+      msw_id: '4677',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'VENDÉE'
+    )
+
+    ##############################################
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
     )
   end
 
   def self.create_forecasts
     Spot.all.each do |spot|
+      # sleep 1
+      # get http restclient.get
       data = JSON.parse(File.read("#{Rails.root}/app/services/#{spot.msw_id}.json"))
 
       data.each do |element|

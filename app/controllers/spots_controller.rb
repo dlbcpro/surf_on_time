@@ -6,9 +6,12 @@ class SpotsController < ApplicationController
     set_end
 
     number_days = (@end - @start).to_i + 1
+    min = params[:min].present? ? params[:min] : 0
+    max = params[:max].present? ? params[:max] : 10
+
     @spots = Spot.joins(:forecasts)
                  .where("forecasts.day >=  ? AND forecasts.day < ?", @start, @end + 1)
-                 .where("forecasts.min_wave_height > ?", 0.7)
+                 .where("forecasts.min_wave_height >= ? AND forecasts.max_wave_height <= ?", min, max)
                  .group(:id)
                  .having("COUNT(distinct DATE(forecasts.day)) = ?", number_days)
   end
