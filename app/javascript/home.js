@@ -1,35 +1,18 @@
-
-var elem = document.querySelector('.main-carousel');
-// var flkty = new Flickity( elem, {
-//   // options
-//   cellAlign: 'left',
-//   contain: true
-// });
-
-// element argument can be a selector string
-//   for an individual element
-// var flkty = new Flickity( '.main-carousel', {
-//   // options
-// });
-
-
-
-
-
-
 const rangeMin = document.getElementById("rangeMin");
 const rangeMax = document.getElementById("rangeMax");
 const ranger = document.getElementById("toto");
 
 // const rangeBullet = document.getElementById("rs-bullet");
 const niveau = document.querySelector('.niveau');
-
-ranger.addEventListener("input", function ran() {
+if (ranger){
+  ranger.addEventListener("input", function ran() {
   console.log(rangeMin.value);
   console.log("lalala");
   console.log(rangeMin.value);
   showSliderValue();
 });
+}
+
 
 function showSliderValue() {
   // rangeBullet.innerHTML = rangeSlider.value;
@@ -37,9 +20,9 @@ function showSliderValue() {
   // var range = rangeBullet.style.left = (bulletPosition * 212) + "px";
   // // console.log(range);
   
-  if(1.5 < rangeMin.value && rangeMin.value < 3.5 && 1.5 < rangeMax.value && rangeMax.value < 3.5){
+  if(1.5 < rangeMax.value && rangeMax.value < 3.5){
     niveau.innerHTML = "Intermédiaire";
-  } else if(rangeMin.value >= 3.5 && rangeMax.value >= 3.5){
+  } else if(rangeMax.value >= 3.5){
     niveau.innerHTML = "Expert";
   } else {
     niveau.innerHTML = "Débutant";
@@ -61,7 +44,7 @@ if (input) {
     max: 10,
     step: 0.5,
 
-    value: [0, 10],
+    value: [0, 1.5],
     vertical: false,
     controls: undefined,
     onInit: function() {
