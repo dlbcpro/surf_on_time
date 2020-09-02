@@ -16,7 +16,7 @@ true
 
 
       <div class="h-full w-full flex items-end">
-        <div class="form-content bg-green-500 flex flex-col h-80% w-full p-10">
+        <div class="form-content bc-bleu-f rounded-md flex flex-col w-full p-10">
 
 
           <h2 class="subtitle mont text-3xl font-bold mb-10 text-white">Trouve en 2 clics ton prochain surf trip avec les meilleures conditions</h2>
@@ -37,16 +37,23 @@ true
 
            
               <!-- <p><span class="niveau">Débutant</span></p> -->
+           
             
-            <hr>
-            <hr>
-            
-            <!-- type: hidden -->
-            <div class="range-wave p-10 bc-green-200">
-              <label class="text-white roboto mb-5">Selectione ta vague</label>
+            <!-- RANGE HAUTEUR -->
+            <div class="range-wave mb-10 flex flex-col justify-center">
+              <label class="text-white roboto mb-3">Selectione ta vague</label>
               <input type="hidden" name="min" id="rangeMin">
               <input type="hidden" name="max" id="rangeMax">
-              <input id="toto" class="rs-range" type="range">
+              <div class="waves_range flex justify-between items-end">
+                <%= image_tag 'pictos/wave_range.svg', class: "h-5" %>
+                <%= image_tag 'pictos/wave_range.svg', class: "pictos-range-wave" %>
+              </div>
+              <input id="toto" class="rs-range mt-5 roboto text-white" type="range">
+              <p class="p flex justify-center">
+                <span class="niveau text-white roboto py-1 px-8 mt-2 bc-bleu-t rounded-md">Débutant</span>
+              </p>
+
+
             </div>
             
 
@@ -59,9 +66,12 @@ true
               <input type="text" name="test" class="bc-bleu-t test rounded-md mb-8 text-left py-3 px-3  placeholder-home" placeholder="DU ... AU ...">
             </div> -->
 
-            <div class="date-choice">
-              <input type="text" name="start" class="bc-bleu-t start-date rounded-md mb-2 text-left pl-5 placeholder-home" placeholder="Du">
-              <input type="text" name="end" class="bc-bleu-t end-date rounded-md mb-8 text-left pl-5 text-left pl-5 placeholder-home" placeholder="Au">
+            <div class="date-choice flex flex-col">
+              <label class="text-white roboto">Selectione tes dates</label>
+              <div class="dates flex">
+                <input type="text" name="start" class="bc-bleu-t start-date rounded-md mb-2 mr-2 text-left pl-5 placeholder-home" placeholder="Du">
+                <input type="text" name="end" class="bc-bleu-t end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
+              </div>
             </div>
 
 

@@ -17,23 +17,29 @@ var elem = document.querySelector('.main-carousel');
 
 
 
-const rangeSlider = document.getElementById("rs-range-line");
-const rangeBullet = document.getElementById("rs-bullet");
+const rangeMin = document.getElementById("rangeMin");
+const rangeMax = document.getElementById("rangeMax");
+const ranger = document.getElementById("toto");
+
+// const rangeBullet = document.getElementById("rs-bullet");
 const niveau = document.querySelector('.niveau');
 
-rangeSlider.addEventListener("input", function ran() {
+ranger.addEventListener("input", function ran() {
+  console.log(rangeMin.value);
+  console.log("lalala");
+  console.log(rangeMin.value);
   showSliderValue();
 });
 
 function showSliderValue() {
-  rangeBullet.innerHTML = rangeSlider.value;
-  var bulletPosition = (rangeSlider.value /rangeSlider.max);
-  var range = rangeBullet.style.left = (bulletPosition * 212) + "px";
-  console.log(range);
+  // rangeBullet.innerHTML = rangeSlider.value;
+  // var bulletPosition = (rangeSlider.value /rangeSlider.max);
+  // var range = rangeBullet.style.left = (bulletPosition * 212) + "px";
+  // // console.log(range);
   
-  if(79 < bulletPosition*212 && bulletPosition*212 < 159){
+  if(1.5 < rangeMin.value && rangeMin.value < 3.5 && 1.5 < rangeMax.value && rangeMax.value < 3.5){
     niveau.innerHTML = "Intermédiaire";
-  } else if(bulletPosition*212 >= 159){
+  } else if(rangeMin.value >= 3.5 && rangeMax.value >= 3.5){
     niveau.innerHTML = "Expert";
   } else {
     niveau.innerHTML = "Débutant";

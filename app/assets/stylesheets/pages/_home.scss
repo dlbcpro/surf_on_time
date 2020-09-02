@@ -38,11 +38,6 @@
   color: #FFFFFF;
 }
 
-.form-content{
-  background: rgba(2, 120, 122, 0.5);
-  border-radius: 20px;
-}
-
 .title-find{
   height: 260px;
 }
@@ -107,6 +102,11 @@ span:first-child{
   &:focus {
       outline: none;
   }
+
+
+
+
+
 
   ////
   &::-webkit-slider-runnable-track {
@@ -201,4 +201,70 @@ span:first-child{
 
 .glider-dot {
   display: none !important;
+}
+
+
+///// range
+.range-wave {
+  width: 470px;
+}
+
+.rangeable-container {
+  margin-top: 30px;
+  width: 400px;
+}
+
+
+.dates {
+  margin-top: 30px;
+}
+
+.rangeable-handle{
+  border: none !important;
+  // &::before{
+  //   position:relative !important;
+  //   top: 0 !important;
+  //   right: 0 !important;
+  //   content:url(../../images/pictos/wave_range.svg) !important;
+  // }
+
+}
+
+.rangeable-progress{
+  background-color: #4ABBC7 !important;
+  border-width: 2px !important;
+  border-color: #4ABBC7 !important;
+}
+
+.rangeable-buffers {
+  background-color: white !important;
+  border-width: 2px !important;
+  border-color: white !important;
+}
+
+.rangeable-tooltip {
+  background-color: transparent !important;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1rem;
+  bottom: 100% !important;
+  &::before{
+    display: none;
+    // border-color: white transparent transparent !important;
+    // border-width: 8px 8px 0 !important;
+    // left: 50%;
+    // top: 0 !important;
+  }
+  // &::after {
+  //   content: "m";
+  //   display: block;
+  //   font-size: 16px;
+  //   font-family: 'Roboto', sans-serif;
+  //   margin-top: 0px;
+  //   line-height: 1rem;
+  // }
+}
+
+.pictos-range-wave{
+  height: 30px;
 }
