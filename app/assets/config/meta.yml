@@ -1,0 +1,10 @@
+# config/meta.yml
+
+meta_product_name: "Surf On Time"
+meta_title: "Surf On Time | Ton prochain surf trip !"
+meta_description: "Surf on Time te permet d’accéder en seulement quelques clics
+à des informations pertinentes pour rider dans des conditions optimales.
+Nous prenons en compte les conditions météorologiques afin de te proposer les
+spots les plus agréables & adaptés à ton niveau."
+meta_image: "meta_card.jpg" # should exist in `app/assets/images/`
+twitter_account: "@oceansurfreport"   # required for Twitter Cards
