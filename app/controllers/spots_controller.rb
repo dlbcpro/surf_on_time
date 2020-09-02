@@ -43,7 +43,7 @@ class SpotsController < ApplicationController
   # end
 
   def set_start
-    if params[:start]
+    if params[:start].present?
       @start = params[:start].to_date
     else
       @start = Date.today
@@ -51,7 +51,7 @@ class SpotsController < ApplicationController
   end
 
   def set_end
-    if params[:end]
+    if params[:end].present?
       @end = params[:end].to_date
     else
       @end = Date.today + 6
