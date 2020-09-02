@@ -16,6 +16,17 @@ class SpotsController < ApplicationController
   def show
     set_start
     set_end
+
+    find_spot
+    @surf_schools = SurfSchool.near([@spot.latitude, @spot.longitude], 100, order: :distance)
+    @markers = @surf_schools.geocoded.map do |surf_school|
+      {
+        lat:        surf_school.latitude,
+        lng:        surf_school.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { surf_school: surf_school })
+      }
+    end
+    @spot_marker = { lat: @spot.latitude, lng: @spot.longitude }
   end
 
   def update

@@ -1,6 +1,9 @@
 class Spot < ApplicationRecord
   has_many :forecasts
 
+  geocoded_by :name
+  after_validation :geocode, if: :will_save_change_to_name?
+
   def avg_min_wave_height(day_start, day_end)
     forecasts.where("forecasts.day >=  ? AND forecasts.day < ?", day_start, day_end + 1).average(:min_wave_height).round(2)
   end

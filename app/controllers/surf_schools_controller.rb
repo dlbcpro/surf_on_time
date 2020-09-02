@@ -1,9 +1,11 @@
 class SurfSchoolsController < ApplicationController
   def index
-    @surf_schools = Surf_school.all
+    @surf_schools = SurfSchool.all
   end
 
   def show
+    find_surf_school
+    @spot = Spot.near([@surf_school.latitude, @surf_school.longitude], 100).first
   end
 
   def update
@@ -12,7 +14,7 @@ class SurfSchoolsController < ApplicationController
   private
 
   def find_surf_school
-    @surf_school = Surf_school.find(params[:id])
+    @surf_school = SurfSchool.find(params[:id])
   end
 
   def surf_school_params
