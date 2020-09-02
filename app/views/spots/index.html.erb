@@ -73,9 +73,8 @@
   <!-- les cards spot -->
 <div class="container flex flex-col items-center mx-auto px-10">
   <div class="grid grid-cols-3 gap-10">
-
-<% @spots.each do |spot| %>
-  <!-- card spot -->
+    <% @spots.each do |spot| %>
+      <!-- card spot -->
       <%= link_to spot_path(spot, start: params[:start], end: params[:end]) do %>
         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
           <div class="img-spot">
@@ -89,13 +88,9 @@
           </div>
         </div>
       <% end %>
-<% end %>
-
-
+    <% end %>
   </div>
 
 <!-- afficher plus -->
   <a class="mont bc-bleu-f flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium m-20" href="#">Plus de spots</a>
-
-
 </div>

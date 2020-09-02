@@ -28,10 +28,14 @@ require("channels")
 
 // Internal imports, e.g:
 import { initFlatpickr } from '../plugins/flatpickr';
+import { initMapbox } from '../plugins/init_mapbox';
+import "home.js";
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  initMapbox();
   initFlatpickr();
 });
 
-import "home.js";
+
