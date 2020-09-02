@@ -1,18 +1,15 @@
 <% content_for :with_logo do %>
 true
 <% end %>
-
-
 <div class="banner-school">
   <div class="image">
     <%= image_tag 'backgrounds/background school surf.jpg' %>
   </div>
 </div>
 
-
 <div class="container mx-auto px-10 pt-10 pb-16">
   <div class="return pb-8">
-    <%= link_to "< Retour au Spot", spot_path(params[:id]), class: "roboto text-gray-500 hover:text-gray-600"%>
+    <%= link_to "< Retour au Spot", spot_path(@spot), class: "roboto text-gray-500 hover:text-gray-600"%>
   </div>
   <div class="font-40 mont bleu-f">
     <h1>Ecole de surf - Jeannot Sport</h1>
@@ -26,19 +23,12 @@ true
     un moment inoubliable ! </p>
   </div>
 </div>
-
 <div class="relative">
-
   <div class="flex bc-bleu-f lala">
     <div class="h-full w-1/2"></div>
     <div class="h-full w-1/2"><%= image_tag "images/google_map.png", class: "h-full w-full" %></div>
   </div>
-
-
-
   <div class="w-full absolute z-10 top-0 left-0">
-
-
     <div class="container flex mx-auto flex lala text-white">
       <div class="h-full w-1/2 ">
         <div class="flex w-full section-school p-10">
@@ -47,13 +37,13 @@ true
           </div>
           <div>
             <p>
-            Lundi : 9:00 - 19:00 <br>
-            Mardi : 9:00 - 19:00 <br>
-            Mercredi : 9:00 - 19:00 <br>
-            Jeudi : 9:00 - 19:00 <br>
-            Vendredi : 9:00 - 19:00 <br>
-            Samedi : 9:00 - 19:00 <br>
-            Dimanche : 9:00 - 19:00
+              Lundi : 9:00 - 19:00 <br>
+              Mardi : 9:00 - 19:00 <br>
+              Mercredi : 9:00 - 19:00 <br>
+              Jeudi : 9:00 - 19:00 <br>
+              Vendredi : 9:00 - 19:00 <br>
+              Samedi : 9:00 - 19:00 <br>
+              Dimanche : 9:00 - 19:00
             </p>
           </div>
         </div>
@@ -91,14 +81,5 @@ true
       </div>
       <div class="h-full w-1/2"></div>
     </div>
-
-
-
-
   </div>
-
-
-
-
-
 </div>

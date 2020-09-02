@@ -11,9 +11,20 @@ class Importer
   end
 
   def self.create_spots
+    # data = JSON.parse(File.read("#{Rails.root}/app/services/#{spot.msw_id}.json"))
+
+    # data.each do
     Spot.create(
       name: 'HOSSEGOR (LA GRAVIERE)',
       msw_id: '38',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'SOORTS-HOSSEGOR'
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
       continent: 'EUROPE',
       country: 'FRANCE',
       region: 'SOORTS-HOSSEGOR'
@@ -28,16 +39,196 @@ class Importer
     )
 
     Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
       name: 'LA TORCHE',
       msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
       region: 'FINISTERE-SOUTH'
     )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    ##############################################
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
+
+    Spot.create(
+      name: '',
+      msw_id: '',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: ''
+    )
   end
 
   def self.create_forecasts
     Spot.all.each do |spot|
+      # sleep 1
+      # get http restclient.get
       data = JSON.parse(File.read("#{Rails.root}/app/services/#{spot.msw_id}.json"))
 
       data.each do |element|

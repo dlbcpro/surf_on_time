@@ -1,0 +1,40 @@
+
+    <div class="card-content w-full h-full">
+      <div class="container school-card mx-auto flex justify-end items-center my-auto h-full">
+
+        <div class="card rounded-lg flex flex-col bg-white shadow-lg">
+<!-- image de l'école -->
+          <%= image_tag 'divers/Surftraining-web-2018-5bis 1.jpg', class: 'w-full' %>
+          <div class="card-text flex-grow p-5">
+
+
+            <div class="text flex flex-col justify-between h-full">
+              <h3 class="mont text-xl font-semibold whitespace-no-wrap mb-6"><%= surf_school.name %>
+</h3>
+              <p class="roboto font-light text-sm"><%= distance_in_km(@spot, surf_school).round(2) %>km</p>
+              <div class="flex">
+                <%= image_tag 'pictos/planches.svg' %>
+<!-- prix planche -->
+                <p class="px-2 roboto font-light text-sm">à partir de 9€/2h</p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex">
+                  <%= image_tag 'pictos/planches.svg' %>
+                  <p class="px-2 roboto font-light text-sm"> + </p>
+                  <%= image_tag 'pictos/prof-surf.svg' %>
+                  <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
+                </div>
+                <%= link_to "En savoir plus...", surf_school_path(surf_school), class: "roboto font-light text-xs text-gray-600 hover:text-gray-800" %>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
