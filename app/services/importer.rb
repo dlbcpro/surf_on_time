@@ -19,15 +19,15 @@ class Importer
       msw_id: '38',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS-HOSSEGOR'
+      region: 'SOORTS - HOSSEGOR'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'LES ESTAGNOTS',
+      msw_id: '890',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS-HOSSEGOR'
+      region: 'SOORTS - HOSSEGOR'
     )
 
     Spot.create(
@@ -39,11 +39,11 @@ class Importer
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'VIEUX BOUCAU',
+      msw_id: '64',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'LANDES'
     )
 
     Spot.create(
@@ -51,79 +51,79 @@ class Importer
       msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'FINISTERE-SOUTH'
+      region: 'FINISTERE - SOUTH'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'LA TORCHE',
+      msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'FINISTERE - SOUTH'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'GOLD BEACH',
+      msw_id: '5567',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'MANCHE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'OMAHA BEACH',
+      msw_id: '5553',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'MANCHE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BLANCS-SABLONS',
+      msw_id: '74',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'BRITTANY - NORTH'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'LE PETIT MINOU',
+      msw_id: '1520',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'BRITTANY - NORTH'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'PLAGE DU LOCH',
+      msw_id: '1557',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'MORBIHAN & LOIRE ATLANTIQUE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'LA CÔTE SAUVAGE',
+      msw_id: '1556',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'MORBIHAN & LOIRE ATLANTIQUE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'LES DUNES',
+      msw_id: '1570',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'VENDÉE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'LES SABLES-D\'OLONNE',
+      msw_id: '4677',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'VENDÉE'
     )
 
     ##############################################
