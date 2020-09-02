@@ -18,12 +18,12 @@ const initFlatpickr = () => {
     dateFormat: "d-m-Y",
   })
 
-  flatpickr(".test", {
-    mode: "range",
-    // minDate: "today",
-    dateFormat: "Y-m-d",
+//   flatpickr(".test", {
+//     mode: "range",
+//     // minDate: "today",
+//     dateFormat: "Y-m-d",
     
-})
+// })
 }
 
 
