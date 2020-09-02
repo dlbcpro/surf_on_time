@@ -19,12 +19,22 @@ const initMapbox = () => {
 
     const markers = JSON.parse(mapElement.dataset.markers);
     markers.forEach((marker) => {
-      const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // add this
-
-      new mapboxgl.Marker({ color: '#D85040'})
+      const mapboxMarker = new mapboxgl.Marker({ color: '#D85040', className: 'mapboxMarker'})
         .setLngLat([ marker.lng, marker.lat ])
-        .setPopup(popup) // add this
         .addTo(map);
+
+      mapboxMarker.getElement().addEventListener('click', () => {
+        // 1. Aller chercher la div qui correspond au marker
+
+
+        // Hide all surf school cards
+        document.querySelectorAll('.surf-school-card').forEach((card) => {
+          card.style.display = 'none'
+        });
+
+        // Show specific surf school card
+        document.querySelector(`#surf-school-${marker.id}`).style.display = 'block';
+      });
     });
 
     const marker_spot = JSON.parse(mapElement.dataset.spot);
