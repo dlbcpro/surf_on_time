@@ -54,10 +54,6 @@
     data-spot="<%= @spot_marker.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 
-
-<!--     <div class="bg-white p-4 mr-10"><%= @surf_schools.first.name %></div>
-
- -->
     <% @surf_schools.each do |surf_school| %>
       <div id="surf-school-<%= surf_school.id %>"  class="surf-school-card absolute top-0 bottom-0 right-0 p-10 z-30 flex items-center">
         <div class="card-content w-full h-full">
@@ -70,8 +66,7 @@
 
 
                 <div class="text flex flex-col justify-between h-full">
-                  <h3 class="mont text-xl font-semibold whitespace-no-wrap mb-6"><%= surf_school.name %>
-    </h3>
+                  <h3 class="mont text-xl font-semibold whitespace-no-wrap mb-6"><%= surf_school.name %></h3>
                   <p class="roboto font-light text-sm"><%= distance_in_km(@spot, surf_school).round(2) %>km</p>
                   <div class="flex">
                     <%= image_tag 'pictos/planches.svg' %>
@@ -88,18 +83,10 @@
                     <%= link_to "En savoir plus...", surf_school_path(@surf_schools.first), class: "roboto font-light text-xs text-gray-600 hover:text-gray-800" %>
                   </div>
                 </div>
-
-
               </div>
-
-
             </div>
-
-
-
           </div>
         </div>
-
     </div>
   <% end %>
 </div>

@@ -22,7 +22,7 @@ class SpotsController < ApplicationController
     set_end
 
     find_spot
-    @surf_schools = SurfSchool.near([@spot.latitude, @spot.longitude], 100, order: :distance)
+    @surf_schools = SurfSchool.geocoded.near([@spot.latitude, @spot.longitude], 100, order: :distance)
     @markers = @surf_schools.geocoded.map do |surf_school|
       {
         lat: surf_school.latitude,

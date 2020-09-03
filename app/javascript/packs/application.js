@@ -35,10 +35,10 @@ import "home.js";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  arrow();
   initMapbox();
   initFlatpickr();
   meteo();
-  arrow();
   level();
   range();
   gliderc();
