@@ -14,9 +14,11 @@
 
 
 // Flatpickr
-@import 'flatpickr/dist/flatpickr.css';
+@import 'flatpickr/dist/flatpickr';
 
 // Mapbox
 @import 'mapbox-gl/dist/mapbox-gl';
 @import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder';
 
+// Range
+@import 'rangeable/dist/rangeable.min'

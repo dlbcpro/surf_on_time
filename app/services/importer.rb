@@ -215,6 +215,22 @@ class Importer
       country: 'FRANCE',
       region: 'BIARRITZ/ANGLET'
     )
+
+    Spot.create(
+      name: 'CAP DE L\'HOMY',
+      msw_id: '885',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'LANDES'
+    )
+
+    Spot.create(
+      name: 'ERRETEGIA',
+      msw_id: '1511',
+      continent: 'EUROPE',
+      country: 'FRANCE',
+      region: 'LA CÔTE BASQUE'
+    )
   end
 
   def self.create_forecasts

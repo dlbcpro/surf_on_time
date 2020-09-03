@@ -5,7 +5,7 @@ true
 <div class="banner-home" >
   <div class="container banner-container mx-auto items-center py-10">
     <div class="banner-content grid grid-cols-2 h-full">
-      <div class="Logo-text leading-none mont flex items-center">
+      <div class="Logo-text leading-none mont flex">
           <h1>SURF<br>ON<br>TIME</h1>
       </div>
 
@@ -26,10 +26,13 @@ true
       </div>
 
       <div class="h-full w-full flex items-end">
-        <div class="form-content bc-bleu-f rounded-md flex flex-col h-full w-full px-10 py-5">
 
 
-          <h2 class="subtitle mont text-3xl font-bold mb-10 text-white">Trouve en 2 clicks ton prochain surf trip avec les meilleures conditions</h2>
+
+        <div class="form-content rounded-md flex flex-col h-full w-full px-10 py-5">
+
+
+          <h2 class="subtitle mont text-3xl font-semibold mb-10 text-white">Trouve en 2 clicks ton prochain surf trip avec les meilleures conditions</h2>
 
 
           <form class="form" action="<%= spots_path %>">
@@ -41,17 +44,17 @@ true
 
 <!-- RANGE HAUTEUR -->
             <div class="range-wave mb-5 flex flex-col justify-center">
-              <label class="text-white roboto">Selectionne ta vague</label>
+              <label class="text-white text-lg font-bold roboto">Selectionne ta vague</label>
               <div class="px-10 py-5 rounded-md ">
-                <input type="hidden" name="min" id="rangeMin">
-                <input type="hidden" name="max" id="rangeMax">
+                <input type="hidden" name="min" id="rangeMin" value="0">
+                <input type="hidden" name="max" id="rangeMax" value="1.5">
                 <div class="waves_range flex justify-between items-end">
                   <%= image_tag 'pictos/wave_range.svg', class: "h-5" %>
                   <%= image_tag 'pictos/wave_range.svg', class: "pictos-range-wave" %>
                 </div>
                 <input id="toto" class="rs-range mt-5 roboto text-white" type="range">
                 <p class="p flex justify-center">
-                  <span class="niveau text-white roboto py-1 px-8 mt-2 bc-bleu-t rounded-md">Débutant</span>
+                  <span class="niveau text-white roboto py-1 px-8 mt-4 bc-bleu-t rounded-md">Débutant</span>
                 </p>
 
               </div>
@@ -62,10 +65,10 @@ true
 
 
             <div class="date-choice flex flex-col">
-              <label class="text-white roboto">Selectionne tes dates</label>
+              <label class="text-white font-bold text-lg roboto">Selectionne tes dates</label>
               <div class="dates flex">
-                <input type="text" name="start" class="border-2 border-white bc-bleu-f start-date rounded-md mb-2 mr-2 text-left pl-5 placeholder-home" placeholder="Du">
-                <input type="text" name="end" class="border-2 border-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
+                <input type="text" name="start" class="bc-bleu-t text-white bc-bleu-f start-date rounded-md mb-2 mr-2 text-left pl-5 placeholder-home" placeholder="Du">
+                <input type="text" name="end" class="bc-bleu-t text-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
               </div>
             </div>
 
@@ -73,7 +76,7 @@ true
 
 
 
-            <input type="submit" class="mont bc-bleu-t flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 mt-10 font-normal hover:font-medium text-left" value="Trouver un spot">
+            <input type="submit" class="btn-find mont bc-bleu-t flex items-center justify-center text-white rounded-md h-10 w-48 mt-10 font-normal transition-all duration-500 ease-in-out text-left" value="Trouver un spot">
 
           </form>
 
@@ -113,7 +116,7 @@ true
       <div class="">
 
         <%= link_to spot_path(spot) do %>
-          <div class="spot-card shadow-sm rounded-lg hover:shadow-lg transition duration-1000 ease-in-out">
+          <div class="spot-card shadow-lg rounded-lg hover:shadow-sm transition duration-500 ease-in-out">
             <div class="img-spot">
               <%= image_tag 'divers/hossegor-graviere.jpg' %>
             </div>

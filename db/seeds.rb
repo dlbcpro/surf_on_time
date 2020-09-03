@@ -51,3 +51,27 @@ lesson_price_tendancy: '20', rental_price_tendancy: '5')
 school12 = SurfSchool.create!(name: 'Gas Surf Center', description: 'Ecole de surf à La Ciotat', address: 'Avenue des Vieux Moulins, 13600 La Ciotat', website: 'http://www.manipura.com/club/',
 phone_number: '+33616636286', opening_hours: 'monday, 09:00–19:00, tuesday, 09:00–19:00, wednedsay, 09:00–19:00, thursday, 09:00–19:00, friday, 09:00–19:00, saturday, 09:00–19:00, sunday, 09:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Inside Water',
 lesson_price_tendancy: '40', rental_price_tendancy: '30')
+
+school13 = SurfSchool.create!(name: 'Ecole de surf Messanges Sud', description: 'Ecole de surf à Messanges', address: 'Route de la Plage S, 40660 Messanges', website: 'https://www.surfmessanges-sud.com/',
+phone_number: '+33677510699', opening_hours: 'monday, 09:00–19:00, tuesday, 09:00–19:00, wednedsay, 09:00–19:00, thursday, 09:00–19:00, friday, 09:00–19:00, saturday, 09:00–19:00, sunday, 09:00–19:00', meeting_point: 'At School', lesson_type: 'Inside Water',
+lesson_price_tendancy: '40', rental_price_tendancy: '30')
+
+school14 = SurfSchool.create!(name: 'Messanges Surf School', description: 'Ecole de surf à Messanges', address: 'Route de la Plage S, 40660 Messanges', website: 'https://www.messanges-surf-school.com/',
+phone_number: '+33677487385', opening_hours: 'monday, 09:00–19:00, tuesday, 09:00–19:00, wednedsay, 09:00–19:00, thursday, 09:00–19:00, friday, 09:00–19:00, saturday, 09:00–19:00, sunday, 09:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Outside Water',
+lesson_price_tendancy: '50', rental_price_tendancy: '40')
+
+school15 = SurfSchool.create!(name: 'Vieux-Boucau Surf Club', description: 'Ecole de surf à Messanges', address: 'Plage des Sablères, Rue de lErg, 40480 Vieux-Boucau-les-Bains', website: 'http://www.surfclub-vieuxboucau.com/',
+phone_number: '+33558482933', opening_hours: 'monday, 09:00–19:00, tuesday, 09:00–19:00, wednedsay, 09:00–19:00, thursday, 09:00–19:00, friday, 09:00–19:00, saturday, 09:00–19:00, sunday, 09:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Outside Water',
+lesson_price_tendancy: '30', rental_price_tendancy: '20')
+
+school16 = SurfSchool.create!(name: 'Dreamlandes surfschool', description: 'Ecole de surf à Messanges', address: '45 Avenue de la Plage, 40480 Vieux-Boucau-les-Bains', website: 'https://www.dreamlandes.fr/',
+phone_number: '+33619409804', opening_hours: 'monday, 08:00–19:30, tuesday, 08:00–19:30, wednedsay, 08:00–19:30, thursday, 08:00–19:30, friday, 08:00–19:30, saturday, 08:00–19:30, sunday, 08:00–19:30', meeting_point: 'At School', lesson_type: 'Outside Water',
+lesson_price_tendancy: '35', rental_price_tendancy: '25')
+
+school17 = SurfSchool.create!(name: 'Alternative Surf School - école de surf', description: 'Ecole de surf à Messanges', address: 'Résidence la plage, Plage Sud, Rue des Goélands, 40480 Vieux-Boucau-les-Bains', website: 'http://www.alternativesurfschool.com/',
+phone_number: '+33603060642', opening_hours: 'monday, 10:00–19:00, tuesday, 10:00–19:00, wednedsay, 10:00–19:00, thursday, 10:00–19:00, friday, 10:00–19:00, saturday, 10:00–19:00, sunday, 10:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Inside Water',
+lesson_price_tendancy: '45', rental_price_tendancy: '35')
+
+school18 = SurfSchool.create!(name: 'SURF UNIVERS', description: 'Ecole de surf à Messanges', address: 'Résidence la plage, Parking lEstacade, Rue des Goélands, 40480 Vieux-Boucau-les-Bains', website: 'http://www.surf-vieuxboucau.com/',
+phone_number: '+33558482851', opening_hours: 'monday, 09:00–20:00, tuesday, 09:00–20:00, wednedsay, 09:00–20:00, thursday, 09:00–20:00, friday, 09:00–20:00, saturday, 09:00–20:00, sunday, 09:00–20:00', meeting_point: 'At School', lesson_type: 'Inside Water',
+lesson_price_tendancy: '40', rental_price_tendancy: '30')
