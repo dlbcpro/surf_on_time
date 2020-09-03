@@ -75,7 +75,7 @@
   <div class="grid grid-cols-3 gap-10">
     <% @spots.each do |spot| %>
       <!-- card spot -->
-      <%= link_to spot_path(spot, start: params[:start], end: params[:end]) do %>
+      <%= link_to spot_path(spot, start: params[:start], end: params[:end], min: params[:min], max: params[:max]) do %>
         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
           <div class="img-spot">
             <%= image_tag 'divers/hossegor-graviere.jpg' %>
