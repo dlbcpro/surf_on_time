@@ -6,7 +6,6 @@ true
     <%= image_tag 'backgrounds/background school surf.jpg' %>
   </div>
 </div>
-
 <div class="container mx-auto px-10 pt-10 pb-16">
   <div class="return pb-8">
     <%= link_to "< Retour au Spot", spot_path(@spot), class: "roboto text-gray-500 hover:text-gray-600"%>
@@ -31,20 +30,30 @@ true
   <div class="w-full absolute z-10 top-0 left-0">
     <div class="container flex mx-auto flex lala text-white">
       <div class="h-full w-1/2 ">
+        <h1 class="infos">Informations utiles</h1>
         <div class="flex w-full section-school p-10">
           <div class="mr-3">
             <h3>HORAIRES :</h3>
           </div>
-          <div>
-            <p>
-              Lundi : 9:00 - 19:00 <br>
-              Mardi : 9:00 - 19:00 <br>
-              Mercredi : 9:00 - 19:00 <br>
-              Jeudi : 9:00 - 19:00 <br>
-              Vendredi : 9:00 - 19:00 <br>
-              Samedi : 9:00 - 19:00 <br>
-              Dimanche : 9:00 - 19:00
-            </p>
+          <div class="jours-heures">
+            <div class="school-jours">
+              Lundi :<br>
+              Mardi :<br>
+              Mercredi :<br>
+              Jeudi :<br>
+              Vendredi :<br>
+              Samedi :<br>
+              Dimanche :<br>
+            </div>
+            <div class="school-heures">
+              9:00 - 19:00<br>
+              9:00 - 19:00<br>
+              9:00 - 19:00<br>
+              9:00 - 19:00<br>
+              9:00 - 19:00<br>
+              9:00 - 19:00<br>
+              9:00 - 19:00<br>
+            </div>
           </div>
         </div>
         <div class="flex w-full section-school p-10">
