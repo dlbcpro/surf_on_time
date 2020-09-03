@@ -7,7 +7,7 @@ const arrow = () => {
 
     const arrow = elem.querySelector(".arrow");
     const degres = 360 - elem.dataset.angle;
-   
+
 
     greenArrow.style.display = 'none';
     redArrow.style.display = 'none';
@@ -35,7 +35,7 @@ const meteo = () => {
     const pluie = elem.querySelector(".pluie");
     const orage = elem.querySelector(".orage");
     const nuage = elem.querySelector(".nuage");
-    
+
     soleilNuage.style.display = "none";
     soleil.style.display = "none";
     pluie.style.display = "none";

@@ -54,10 +54,6 @@
     data-spot="<%= @spot_marker.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 
-
-<!--     <div class="bg-white p-4 mr-10"><%= @surf_schools.first.name %></div>
-
- -->
     <% @surf_schools.each do |surf_school| %>
       <div id="surf-school-<%= surf_school.id %>"  class="surf-school-card absolute top-0 bottom-0 right-0 p-10 z-30 flex items-center">
         <div class="card-content w-full h-full">
@@ -87,18 +83,10 @@
                     <%= link_to "Voir cette école", surf_school_path(@surf_schools.first), class: "btn-card-school mont flex items-center justify-center text-black rounded-md py-2 px-8 mt-6 font-normal w-40" %>
                   </div>
                 </div>
-
-
               </div>
-
-
             </div>
-
-
-
           </div>
         </div>
-
     </div>
   <% end %>
 </div>

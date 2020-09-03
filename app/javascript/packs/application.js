@@ -30,12 +30,17 @@ require("channels")
 import { initFlatpickr } from '../plugins/flatpickr';
 import { initMapbox } from '../plugins/init_mapbox';
 import { meteo, arrow } from '../forecast';
+import { level, range, gliderc } from '../home';
 import "home.js";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  arrow();
   initMapbox();
   initFlatpickr();
   meteo();
-  arrow();
+  level();
+  range();
+  gliderc();
+
 });
