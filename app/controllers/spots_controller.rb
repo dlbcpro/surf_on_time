@@ -17,8 +17,7 @@ class SpotsController < ApplicationController
                  .group(:id)
                  .having("COUNT(distinct DATE(forecasts.day)) = ?", number_days)
 
-    ap @spots
-
+    @spots = @spots.where(region: params[:region]) if params[:region].present?
   end
 
   def show
