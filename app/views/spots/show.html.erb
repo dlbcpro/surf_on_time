@@ -66,21 +66,21 @@
 
 
                 <div class="text flex flex-col justify-between h-full">
-                  <h3 class="mont text-xl font-semibold whitespace-no-wrap mb-6"><%= surf_school.name %></h3>
-                  <p class="roboto font-light text-sm"><%= distance_in_km(@spot, surf_school).round(2) %>km</p>
+                  <h3 class="surf-school-title mont text-xl font-semibold whitespace-no-wrap mb-2"><%= surf_school.name %></h3>
+                  <p class="distance-surf roboto text-sm p-1 mb-2">à <%= distance_in_km(@spot, surf_school).round(2) %> km du spot</p>
                   <div class="flex">
-                    <%= image_tag 'pictos/planches.svg' %>
+                    <%= image_tag 'pictos/planches.svg'%>
     <!-- prix planche -->
                     <p class="px-2 roboto font-light text-sm">à partir de 9€/2h</p>
                   </div>
-                  <div class="flex justify-between">
-                    <div class="flex">
-                      <%= image_tag 'pictos/planches.svg' %>
-                      <p class="px-2 roboto font-light text-sm"> + </p>
-                      <%= image_tag 'pictos/prof-surf.svg' %>
-                      <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
-                    </div>
-                    <%= link_to "En savoir plus...", surf_school_path(@surf_schools.first), class: "roboto font-light text-xs text-gray-600 hover:text-gray-800" %>
+                  <div class="flex p-1">
+                    <%= image_tag 'pictos/planches.svg' %>
+                    <p class="px-2 roboto font-light text-sm"> + </p>
+                    <%= image_tag 'pictos/prof-surf.svg' %>
+                    <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
+                  </div>
+                  <div class="flex justify-center">
+                    <%= link_to "Voir cette école", surf_school_path(@surf_schools.first), class: "btn-card-school mont flex items-center justify-center text-black rounded-md py-2 px-8 mt-6 font-normal w-40" %>
                   </div>
                 </div>
               </div>
