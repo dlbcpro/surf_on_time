@@ -43,8 +43,8 @@ true
             <div class="range-wave mb-5 flex flex-col justify-center">
               <label class="text-white roboto">Selectionne ta vague</label>
               <div class="px-10 py-5 rounded-md ">
-                <input type="hidden" name="min" id="rangeMin">
-                <input type="hidden" name="max" id="rangeMax">
+                <input type="hidden" name="min" id="rangeMin" value="0">
+                <input type="hidden" name="max" id="rangeMax" value="1.5">
                 <div class="waves_range flex justify-between items-end">
                   <%= image_tag 'pictos/wave_range.svg', class: "h-5" %>
                   <%= image_tag 'pictos/wave_range.svg', class: "pictos-range-wave" %>
@@ -64,8 +64,8 @@ true
             <div class="date-choice flex flex-col">
               <label class="text-white roboto">Selectionne tes dates</label>
               <div class="dates flex">
-                <input type="text" name="start" class="border-2 border-white bc-bleu-f start-date rounded-md mb-2 mr-2 text-left pl-5 placeholder-home" placeholder="Du">
-                <input type="text" name="end" class="border-2 border-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
+                <input type="text" name="start" class="border-2 border-white text-white bc-bleu-f start-date rounded-md mb-2 mr-2 text-left pl-5 placeholder-home" placeholder="Du">
+                <input type="text" name="end" class="border-2 border-white text-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
               </div>
             </div>
 
