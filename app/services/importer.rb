@@ -19,7 +19,7 @@ class Importer
       msw_id: '38',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS - HOSSEGOR'
+      region: 'SOORTS-HOSSEGOR'
     )
 
     Spot.create(
@@ -27,7 +27,7 @@ class Importer
       msw_id: '890',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS - HOSSEGOR'
+      region: 'SOORTS-HOSSEGOR'
     )
 
     Spot.create(
@@ -51,7 +51,7 @@ class Importer
       msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'FINISTERE - SOUTH'
+      region: 'FINISTERE-SOUTH'
     )
 
     Spot.create(
@@ -59,7 +59,7 @@ class Importer
       msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'FINISTERE - SOUTH'
+      region: 'FINISTERE-SOUTH'
     )
 
     Spot.create(
@@ -83,7 +83,7 @@ class Importer
       msw_id: '74',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BRITTANY - NORTH'
+      region: 'BRITTANY-NORTH'
     )
 
     Spot.create(
@@ -91,7 +91,7 @@ class Importer
       msw_id: '1520',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BRITTANY - NORTH'
+      region: 'BRITTANY-NORTH'
     )
 
     Spot.create(
@@ -129,99 +129,99 @@ class Importer
     ##############################################
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BARZAN-PLAGE',
+      msw_id: '5990',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'GIRONDE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'CARCANS',
+      msw_id: '1535',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'GIRONDE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BIARRITZ GRANDE PLAGE',
+      msw_id: '62',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'BIARRITZ/ANGLET'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'COTE DES BASQUES',
+      msw_id: '894',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'BIARRITZ/ANGLET'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BELHARRA PERDUN',
+      msw_id: '1543',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'LA CÔTE BASQUE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BIDART',
+      msw_id: '1540',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'LA CÔTE BASQUE'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'CANET PLAGE',
+      msw_id: '3511',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'MEDITERRANEAN FRANCE-WEST'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BANDOL',
+      msw_id: '3523',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'MEDITERRANEAN FRANCE-WEST'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'ALGAJOLA',
+      msw_id: '3503',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'SOUTHERN FRANCE - EAST'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'BEAUVALLON',
+      msw_id: '3495',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'SOUTHERN FRANCE - EAST'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'GUETHARY',
+      msw_id: '896',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'BIARRITZ/ANGLET'
     )
 
     Spot.create(
-      name: '',
-      msw_id: '',
+      name: 'ILBARRITZ',
+      msw_id: '895',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: ''
+      region: 'BIARRITZ/ANGLET'
     )
   end
 
