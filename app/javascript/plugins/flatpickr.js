@@ -1,28 +1,28 @@
 // flatpickr
 import flatpickr from "flatpickr";
+import { French } from "flatpickr/dist/l10n/fr.js"
 
 const initFlatpickr = () => {
 
 
-
-
-
   flatpickr(".start-date", {
+    "locale": French,
     altInput: true,
-    altFormat: "F j, Y",
-    dateFormat: "d-m-Y",
+    altFormat: "d M Y",
+    dateFormat: "d M Y",
   })
  flatpickr(".end-date", {
+    "locale": French,
     altInput: true,
-    altFormat: "F j, Y",
-    dateFormat: "d-m-Y",
+    altFormat: "d M Y",
+    dateFormat: "d M Y",
   })
 
 //   flatpickr(".test", {
 //     mode: "range",
 //     // minDate: "today",
 //     dateFormat: "Y-m-d",
-    
+
 // })
 }
 
