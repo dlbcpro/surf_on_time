@@ -3,7 +3,7 @@ const rangeMax = document.getElementById("rangeMax");
 const ranger = document.getElementById("toto");
 
 function level() {
-  const niveau = document.querySelector('.niveau');
+  
   if (ranger){
     ranger.addEventListener("input", function ran() {
     console.log(rangeMin.value);
@@ -18,6 +18,8 @@ function level() {
 
 function showSliderValue() {
   
+  const niveau = document.querySelector('.niveau');
+
   if(1.5 < rangeMax.value && rangeMax.value < 3.5){
     niveau.innerHTML = "Intermédiaire";
   } else if(rangeMax.value >= 3.5){
