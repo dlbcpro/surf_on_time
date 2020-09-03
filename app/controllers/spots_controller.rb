@@ -12,6 +12,7 @@ class SpotsController < ApplicationController
     @spots = Spot.joins(:forecasts)
                  .where("forecasts.day >=  ? AND forecasts.day < ?", @start, @end + 1)
                  .where("forecasts.min_wave_height >= ? AND forecasts.max_wave_height <= ?", min, max)
+                 .where(forecasts: {surf_wind_direction: 'Offshore' })
                  .group(:id)
                  .having("COUNT(distinct DATE(forecasts.day)) = ?", number_days)
   end

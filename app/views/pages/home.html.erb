@@ -105,7 +105,7 @@ true
   <div class="pb-8 pt-16 px-10">
     <h2 class="find-spot mont">Les meilleurs <span class="find-best mont">spots de la semaine</span></h2>
   </div>
-  <div class="glider px-8 pb-5">
+  <div class="glider px-8 pb-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
 
 
@@ -113,7 +113,7 @@ true
       <div class="">
 
         <%= link_to spot_path(spot) do %>
-          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-sm rounded-lg hover:shadow-lg transition duration-1000 ease-in-out">
+          <div class="spot-card shadow-sm rounded-lg hover:shadow-lg transition duration-1000 ease-in-out">
             <div class="img-spot">
               <%= image_tag 'divers/hossegor-graviere.jpg' %>
             </div>
