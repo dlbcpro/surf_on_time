@@ -55,14 +55,6 @@ class Importer
     )
 
     Spot.create(
-      name: 'LA TORCHE',
-      msw_id: '72',
-      continent: 'EUROPE',
-      country: 'FRANCE',
-      region: 'FINISTERE-SOUTH'
-    )
-
-    Spot.create(
       name: 'GOLD BEACH',
       msw_id: '5567',
       continent: 'EUROPE',
