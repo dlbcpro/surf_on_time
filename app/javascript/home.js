@@ -31,7 +31,7 @@ function showSliderValue() {
 
 
 
-import 'rangeable/dist/rangeable.min.css'
+
 import Rangeable from 'rangeable'
 
 function range() {
