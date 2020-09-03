@@ -1,13 +1,13 @@
 .banner-home {
   background-image: image-url('backgrounds/background-home.png');
   background-size: cover;
-  height: 730px;
+  height: 800px;
   margin-top: -100px;
 }
 
 .banner-home-bis{
   height: 730px;
-  margin-top: -500px;
+  margin-top: -700px;
 }
 
 .banner-container {
@@ -21,7 +21,8 @@
 
 .form-content{
   width: 420px;
-  height: 439px;
+  
+  background-color: rgba(63, 198, 162, 0.3);
 }
 .start-date{
   width: 232px;
@@ -47,6 +48,10 @@
   font-size: 144px;
   line-height: 176px;
   color: #FFFFFF;
+  margin-top: 110px;
+}
+.btn-find:hover{
+  background-color: #153351;
 }
 
 .title-find{
@@ -89,117 +94,6 @@
   margin: auto;
 }
 
-
-
-r
-.box-minmax{
-margin-top: 5px;
-width: 230px;
-display: flex;
-justify-content: space-between;
-font-size: 14px;
-color: white;
-span:first-child{
-  margin-left: 0px;
-}
-}
-.range-slider {
-  width: 300px;
-}
-.rs-range {
-  margin-top: 10px;
-  width: 230px;
-  -webkit-appearance: none;
-  &:focus {
-      outline: none;
-  }
-
-
-
-
-
-
-  ////
-  &::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 2px;
-      cursor: pointer;
-      box-shadow: none;
-      background: white;
-      border-radius: 0px;
-      border: 0px solid #010101;
-  }
-  &::-moz-range-track {
-      width: 100%;
-      height: 1px;
-      cursor: pointer;
-      box-shadow: none;
-      background: blueviolet;
-      border-radius: 0px;
-      border: 0px solid #010101;
-  }
-
-  &::-webkit-slider-thumb {
-      box-shadow: none;
-      border: 0px solid white;
-      box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
-      height: 15px;
-      width: 15px;
-      border-radius: 7.5px;
-      background: white;
-      
-      cursor: pointer;
-      -webkit-appearance: none;
-      margin-top: -7px;
-  }
-&::-moz-range-thumb{
-      box-shadow: none;
-      border: 0px solid green;
-      box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
-      height: 42px;
-      width: 22px;
-      border-radius: 22px;
-      background: red;
-      cursor: pointer;
-      -webkit-appearance: none;
-      margin-top: -20px;
-}
-&::-moz-focus-outer {
-  border: 0;
-  }
-}
-.rs-label {
-  
-  position: relative;
-  // transform-origin: center center;
-  display: block;
-  width: 20px;
-  background: transparent;
-  border-radius: 5%;
-  line-height: 30px;
-  text-align: center;
-  font-weight: bold;
-  
-  box-sizing: border-box;
-  border: 0px solid #fff;
-  margin-top: 0px;
-  margin-left: 0px;
-  left: attr(value);
-  color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 16px;
-  &::after {
-      content: "m";
-      display: block;
-      font-size: 16px;
-      letter-spacing: 0.07em;
-      margin-top: 0px;
-  }
-  
-}
-
 ///// glider
 
 .glider-next, .glider-prev {
@@ -232,20 +126,13 @@ span:first-child{
 
 .rangeable-handle{
   border: none !important;
-  // &::before{
-  //   position:relative !important;
-  //   top: 0 !important;
-  //   right: 0 !important;
-  //   content:url(../../images/pictos/wave_range.svg) !important;
-  // }
-
 }
 
 .rangeable-progress{
-  background-color: #4ABBC7 !important;
+  background-color: #153351 !important;
   border-width: 0px !important;
   border-color: #4ABBC7 !important;
-  height: 2px !important;
+  height: 24x !important;
 
 }
 
@@ -270,19 +157,7 @@ span:first-child{
   bottom: 100% !important;
   &::before{
     display: none;
-    // border-color: white transparent transparent !important;
-    // border-width: 8px 8px 0 !important;
-    // left: 50%;
-    // top: 0 !important;
   }
-  // &::after {
-  //   content: "m";
-  //   display: block;
-  //   font-size: 16px;
-  //   font-family: 'Roboto', sans-serif;
-  //   margin-top: 0px;
-  //   line-height: 1rem;
-  // }
 }
 
 .pictos-range-wave{

@@ -45,7 +45,7 @@ function range() {
       max: 10,
       step: 0.5,
 
-      value: [0, 1.5],
+      value: [0, 10],
       vertical: false,
       controls: undefined,
       onInit: function() {
