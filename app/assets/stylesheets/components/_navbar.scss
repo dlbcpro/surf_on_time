@@ -1,9 +1,13 @@
 nav{
-  height: 100px;
-  z-index: 99;
-  position: relative;
+  height: 150px;
 }
 .btn:hover{
   background-color: #153351;
   opacity: 0.7;
+}
+
+.nav-container{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
+  z-index: 99;
+  position: relative;
 }
