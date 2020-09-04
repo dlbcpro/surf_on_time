@@ -13,28 +13,28 @@
       <div class="picto h-20 bg-fo flex justify-center items-center relative">
         <%= image_tag 'pictos/winda.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Direction du vent</div>
           <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-20 bg-cl flex justify-center items-center relative">
         <%= image_tag 'pictos/windb.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Orientation et force du vent</div>
           <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-16 bg-fo flex justify-center items-center relative">
         <%= image_tag 'pictos/periode_houle.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Période entre 2 vagues</div>
           <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-20 bg-cl flex justify-center items-center relative">
         <%= image_tag 'pictos/weather.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Température : air | eau</div>
           <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
 
               <div class="column w-32 <%= 'matching-forecast' if match%>">
                 <p class="h-12 mont font-semibold flex items-center justify-center bg-cl"><%= forecast.day.strftime('%H:%M') %></p>
-                <p class="h-20 flex items-center justify-center"><%= forecast.min_wave_height %> <br> <%= forecast.max_wave_height %> m</p>
+                <p class="h-20 flex items-center justify-center"><%= forecast.min_wave_height %> m<br> <%= forecast.max_wave_height %> m</p>
 
                 <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs" id="wind-arrow" data-direction="<%= forecast.surf_wind_direction %>" data-angle="<%= forecast.decorate.wind_angle %>"><%= image_tag 'pictos/fleche-verte.svg', class:"green-arrow arrow h-6 mb-2" %><%= image_tag 'pictos/fleche-rouge.svg', class:"red-arrow arrow h-6 mb-2" %><%= image_tag 'pictos/fleche-jaune.svg', class:"yellow-arrow arrow h-6 mb-2" %> <%= forecast.surf_wind_direction %></p>
 

@@ -60,7 +60,7 @@ phone_number: '+33677487385', opening_hours: 'monday, 09:00–19:00, tuesday, 09
 lesson_price_tendancy: '50', rental_price_tendancy: '40', image_url: 'images-school/messanges_surf_school.jpg')
 
 school15 = SurfSchool.create!(name: 'Vieux-Boucau Surf Club', description: 'Ecole de surf à Messanges', address: 'Plage des Sablères, Rue de lErg, 40480 Vieux-Boucau-les-Bains', website: 'http://www.surfclub-vieuxboucau.com/',
-phone_number: '+33558482933', opening_hours: 'monday, 09:00–19:00, tuesday, 09:00–19:00, wednedsay, 09:00–19:00, thursday, 09:00–19:00, friday, 09:00–19:00, saturday, 09:00–19:00, sunday, 09:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Outside Water',
+phone_number: '+33558482933', opening_hours: 'monday, 06:00–19:00, tuesday, 06:00–19:00, wednedsay, 06:00–19:00, thursday, 06:00–19:00, friday, 06:00–19:00, saturday, 06:00–19:00, sunday, 06:00–19:00', meeting_point: 'On the Spot', lesson_type: 'Outside Water',
 lesson_price_tendancy: '30', rental_price_tendancy: '20', image_url: 'images-school/gas_surf_center.jpg')
 
 school16 = SurfSchool.create!(name: 'Dreamlandes surfschool', description: 'Ecole de surf à Messanges', address: '45 Avenue de la Plage, 40480 Vieux-Boucau-les-Bains', website: 'https://www.dreamlandes.fr/',
