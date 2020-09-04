@@ -1,0 +1,20 @@
+<% @spots.each do |spot| %>
+  <!-- card spot -->
+  <%= link_to spot_path(spot, start: params[:start], end: params[:end], min: params[:min], max: params[:max]) do %>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+      <div class="img-spot">
+        <%= image_tag 'divers/hossegor-graviere.jpg' %>
+      </div>
+      <div class="py-4 px-6">
+        <p class="mont font-semibold text-xl bleu-f mb-2"><%= spot.name %></p>
+        <p class="roboto text-gray-500 mb-2"><%= spot.region %></p>
+        <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_min_wave_height(@start, @end) %>m - <%= spot.avg_max_wave_height(@start, @end) %>m</p> </div>
+        <div class="flex justify-between">
+          <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/weather.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_air_temperature(@start, @end) %>°C</p> </div>
+          <p class="bleu-f roboto"> <div></div> <%= spot.forecasts_number %>matches</p>
+        </div>
+
+      </div>
+    </div>
+  <% end %>
+<% end %>

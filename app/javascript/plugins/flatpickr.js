@@ -9,13 +9,11 @@ const initFlatpickr = () => {
     "locale": French,
     altInput: true,
     altFormat: "d M Y",
-    dateFormat: "d M Y",
   })
  flatpickr(".end-date", {
     "locale": French,
     altInput: true,
     altFormat: "d M Y",
-    dateFormat: "d M Y",
   })
 
 //   flatpickr(".test", {

@@ -28,6 +28,7 @@ require("channels")
 
 // Internal imports, e.g:
 import { initFlatpickr } from '../plugins/flatpickr';
+import { initFilter } from '../plugins/init_filter';
 import { initMapbox } from '../plugins/init_mapbox';
 import { meteo, arrow } from '../forecast';
 import { level, range, gliderc } from '../home';
@@ -41,5 +42,10 @@ document.addEventListener('turbolinks:load', () => {
   range();
   gliderc();
   initFlatpickr();
+
   initMapbox();
+
+  AOS.init();
+  initFilter();
+
 });

@@ -43,7 +43,7 @@
 
     <div class="card-content flex flex-col">
       <div class="date h-12 flex items-center p-5">
-        <p class="mont font-bold text-lg"><%= l day, format: :long %></p>
+        <p class="mont font-bold text-lg"><%= l day, format: "%A %e %B %Y" %></p>
       </div>
       <div class="datas-content flex text-center">
 
@@ -61,7 +61,7 @@
                 <p class="h-20 flex items-center justify-center"><%= forecast.min_wave_height %> <br> <%= forecast.max_wave_height %> m</p>
 
                 <p class="h-20 flex flex-col items-center justify-center bg-cl text-xs" id="wind-arrow" data-direction="<%= forecast.surf_wind_direction %>" data-angle="<%= forecast.decorate.wind_angle %>"><%= image_tag 'pictos/fleche-verte.svg', class:"green-arrow arrow h-6 mb-2" %><%= image_tag 'pictos/fleche-rouge.svg', class:"red-arrow arrow h-6 mb-2" %><%= image_tag 'pictos/fleche-jaune.svg', class:"yellow-arrow arrow h-6 mb-2" %> <%= forecast.surf_wind_direction %></p>
-                
+
                 <p class="h-20 flex items-center justify-center"><%= forecast.wind_direction %><br> <%= forecast.wind_force %>km/h</p>
                 <p class="h-16 flex items-center justify-center bg-cl"><%= forecast.frequency %>s</p>
 
