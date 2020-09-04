@@ -42,14 +42,12 @@ padding: 10px 100px 10px 100px;
 .horaires {
 display: flex;
 justify-content: space-between;
-border-bottom: 1px solid #4ABBC7;
 margin-top: 20px;
 margin-bottom: 20px;
 padding-bottom: 20px;
 }
 .tarifs {
 justify-content: space-between;
-border-bottom: 1px solid #4ABBC7;
 margin-top: 20px;
 margin-bottom: 20px;
 padding-bottom: 20px;
@@ -83,11 +81,11 @@ padding: 8px 12px;
 width: 100px;
 }
 .lala{
-height: 660px;
+height: 700px;
 }
-.section-school{
-border-bottom: 2px solid #4ABBC7;
-}
+.lala2{
+  height: 697px;
+  }
 .infos{
   font-family: Montserrat;
   font-size: 36px;
@@ -100,4 +98,16 @@ display: flex;
 }
 .school-heures {
 margin-left: 16px;
+}
+
+
+.title-school{
+  position: relative;
+  margin-top: -70px;
+  z-index: 2;
+}
+
+.img-map{
+  height: 101%;
+  margin-top: -1px;
 }

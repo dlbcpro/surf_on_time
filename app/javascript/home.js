@@ -40,7 +40,7 @@ function range() {
   if (input) {
     const rangeable = new Rangeable(input, {
       mutiple: true,
-      tooltips: "always",
+      
       min: 0,
       max: 10,
       step: 0.5,

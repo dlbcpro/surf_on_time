@@ -76,19 +76,21 @@
     <% @spots.each do |spot| %>
       <!-- card spot -->
       <%= link_to spot_path(spot, start: params[:start], end: params[:end], min: params[:min], max: params[:max]) do %>
-        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-xl rounded-lg hover:shadow-lg">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-lg rounded-lg hover:shadow-sm transition duration-500 ease-in-out">
           <div class="img-spot">
             <%= image_tag 'divers/hossegor-graviere.jpg' %>
           </div>
           <div class="py-4 px-6">
             <p class="mont font-semibold text-xl bleu-f mb-2"><%= spot.name %></p>
             <p class="roboto text-gray-500 mb-2"><%= spot.region %></p>
-            <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_min_wave_height(@start, @end) %>m - <%= spot.avg_max_wave_height(@start, @end) %>m</p> </div>
             <div class="flex justify-between">
-              <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/weather.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_air_temperature(@start, @end) %>°C</p> </div>
-              <p class="bleu-f roboto"> <div></div> <%= spot.forecasts_number %>matches</p>
+              <div class="flex flex-col">
+                <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/wave.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_min_wave_height(@start, @end) %>m - <%= spot.avg_max_wave_height(@start, @end) %>m</p> </div>
+                <div class="flex items-center mb-2 bleu-f roboto"><%= image_tag 'pictos/weather.svg', class: "h-8 w-8 mr-5" %> <p><%= spot.avg_air_temperature(@start, @end) %>°C</p> </div>
+              </div>
+              <p class="bleu-f roboto text-xs text-center leading-none mt-3"><span class="text-4xl font-bold bleu-c"><%= (spot.forecasts_number/2) %></span> <br> Conditions <br> optimales</p>
             </div>
-           
+            
           </div>
         </div>
       <% end %>
@@ -96,5 +98,5 @@
   </div>
 
 <!-- afficher plus -->
-  <a class="mont bc-bleu-f flex items-center justify-center text-white border-white border-2 rounded-md py-2 px-8 font-normal hover:font-medium m-20" href="#">Plus de spots</a>
+  <a class="btn-card-school mont bc-bleu-f flex items-center justify-center text-white rounded-md h-10 mb-10 w-48 mt-10 font-normal transition-all duration-500 ease-in-out text-left" href="#">Plus de spots</a>
 </div>
