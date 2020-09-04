@@ -32,7 +32,7 @@ true
         <div class="form-content rounded-md flex flex-col h-full w-full px-10 py-5">
 
 
-          <h2 class="subtitle mont text-3xl font-semibold mb-10 text-white">Trouve en 2 clicks ton prochain surf trip avec les meilleures conditions</h2>
+          <h2 class="subtitle mont text-3xl font-light mb-10 text-white">Trouve en 2 clicks ton prochain surf trip avec les meilleures conditions</h2>
 
 
           <form class="form" action="<%= spots_path %>">
@@ -44,8 +44,8 @@ true
 
 <!-- RANGE HAUTEUR -->
             <div class="range-wave mb-5 flex flex-col justify-center">
-              <label class="text-white text-lg font-bold roboto">Selectionne ta vague</label>
-              <div class="px-10 py-5 rounded-md ">
+              <label class="text-white text-lg font-bold roboto leading-none">Selectionne ta vague</label>
+              <div class="px-10 pb-5 rounded-md ">
                 <input type="hidden" name="min" id="rangeMin" value="0">
                 <input type="hidden" name="max" id="rangeMax" value="1.5">
                 <div class="waves_range flex justify-between items-end">
@@ -54,7 +54,7 @@ true
                 </div>
                 <input id="toto" class="rs-range mt-5 roboto text-white" type="range">
                 <p class="p flex justify-center">
-                  <span class="niveau text-white roboto py-1 px-8 mt-4 bc-bleu-t rounded-md">Débutant</span>
+                  <span class="niveau text-white roboto py-1 px-8 mt-4 bc-bleu-t rounded-md">Expert</span>
                 </p>
 
               </div>
@@ -66,9 +66,9 @@ true
 
             <div class="date-choice flex flex-col">
               <label class="text-white font-bold text-lg roboto">Selectionne tes dates</label>
-              <div class="dates flex">
-                <input type="text" name="start" class="bc-bleu-t text-white bc-bleu-f start-date rounded-md mb-2 mr-2 text-left pl-5 placeholder-home" placeholder="Du">
-                <input type="text" name="end" class="bc-bleu-t text-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
+              <div class="flex">
+                <input type="text" name="start" class="bc-bleu-t text-white bc-bleu-f start-date rounded-md mb-2 mr-2 ml-6 text-left pl-5 w-48 placeholder-home" placeholder="Du">
+                <input type="text" name="end" class="bc-bleu-t text-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 w-48 placeholder-home" placeholder="Au">
               </div>
             </div>
 
@@ -76,7 +76,7 @@ true
 
 
 
-            <input type="submit" class="btn-find mont bc-bleu-t flex items-center justify-center text-white rounded-md h-10 w-48 mt-10 font-normal transition-all duration-500 ease-in-out text-left" value="Trouver un spot">
+            <input type="submit" class="btn-find mont bc-bleu-t flex items-center justify-center text-white font-bold text-xl rounded-md h-12 w-56 mt-10 font-normal transition-all duration-500 ease-in-out text-left" value="Trouver un spot">
 
           </form>
 
@@ -108,7 +108,7 @@ true
   <div class="pb-8 pt-16 px-10">
     <h2 class="find-spot mont">Les meilleurs <span class="find-best mont">spots de la semaine</span></h2>
   </div>
-  <div class="glider px-8 pb-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+  <div class="glider px-8 pb-20" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
 
 
@@ -157,7 +157,7 @@ true
 
   <div class="div-card-school absolute top-0 left-0 w-full h-full">
     <div class="container mx-auto flex justify-end">
-      <%= image_tag 'images-home/school-surf-home.png' %>
+      <%= image_tag 'images-home/card_surf_school.jpg', class: "rounded-lg shadow-lg" %>
     </div>
   </div>
 
@@ -181,7 +181,7 @@ spots les plus agréables & adaptés à ton niveau.</p>
 
   <div class="div-card-school absolute top-0 left-0 w-full h-full">
     <div class="container mx-auto flex justify-start">
-        <%= image_tag 'images-home/prevision-home.png' %>
+        <%= image_tag 'images-home/forecast-apercu.png', class: "rounded-lg shadow-lg overflow-hidden" %>
     </div>
   </div>
 

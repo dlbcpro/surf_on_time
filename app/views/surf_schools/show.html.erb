@@ -6,14 +6,17 @@ true
     <%= image_tag 'backgrounds/background school surf.jpg' %>
   </div>
 </div>
+<div class="title-school container flex justify-end mx-auto pr-10">
+  <h1 class="mont text-6xl font-bold text-white">ECOLE DE SURF</h1>
+</div>
 <div class="container mx-auto px-10 pt-10 pb-16">
   <div class="return pb-8">
     <%= link_to "< Retour au Spot", spot_path(@spot), class: "roboto text-gray-500 hover:text-gray-600"%>
   </div>
   <div class="font-40 mont bleu-f">
-    <h1>Ecole de surf - Jeannot Sport</h1>
+    <h1 class="find-spot mont w-1/2 leading-none"> <span class="find-best mont">Ecole de surf </span> Jeannot Sport</h1>
   </div>
-  <h2 class="date roboto font-bold py-4">Ouverture du 15 Avril au 15 Octobre</h2>
+  <h2 class="date roboto font-bold py-4 text-xl bleu-f pb-10">Ouverture du 15 Avril au 15 Octobre</h2>
   <div class="roboto font-roboto">
     <p class="description w-3/4">Avec plus de 30 ans d’existence, nous proposons des
       cours de surf pour tous, dès 5 ans, quel que soit votre niveau.
@@ -23,15 +26,15 @@ true
   </div>
 </div>
 <div class="relative">
-  <div class="flex bc-bleu-f lala">
+  <div class="flex bc-bleu-f lala2">
     <div class="h-full w-1/2"></div>
-    <div class="h-full w-1/2"><%= image_tag "images/google_map.png", class: "h-full w-full" %></div>
+    <div class="h-full w-1/2"><%= image_tag "images/google_map.png", class: "w-full img-map" %></div>
   </div>
   <div class="w-full absolute z-10 top-0 left-0">
     <div class="container flex mx-auto flex lala text-white">
-      <div class="h-full w-1/2 ">
-        <h1 class="infos">Informations utiles</h1>
-        <div class="flex w-full section-school p-10">
+      <div class="h-full w-1/2 p-10">
+        <h1 class="find-spot mont w-3/4 text-white pb-10"> <span class="find-best mont">Informations</span>  utiles</h1>
+        <div class="flex w-full section-school px-10 pb-10">
           <div class="mr-3">
             <h3>HORAIRES :</h3>
           </div>
@@ -56,7 +59,7 @@ true
             </div>
           </div>
         </div>
-        <div class="flex w-full section-school p-10">
+        <div class="flex w-full section-school px-10 pb-10">
           <div class="mr-12">
             <h3>TARIF :</h3>
           </div>
@@ -76,7 +79,7 @@ true
             </div>
           </div>
         </div>
-        <div class="flex w-full px-10 pt-10">
+        <div class="flex w-full px-10 ">
           <div class="mr-16">
             <%= image_tag "pictos/surf_picto_tel.png", class: "mb-2"  %>
             <%= image_tag "pictos/surf_picto_nav.png"  %>

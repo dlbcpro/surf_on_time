@@ -1,54 +1,54 @@
 <!-- card jour forecast -->
-  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="card-forecast flex mx-auto m-5 rounded-lg shadow-lg my-8 overflow-hidden">
+  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="card-forecast inline-flex mx-auto m-5 rounded-lg overflow-hidden shadow-lg my-8">
     <div class="pictos text-center">
       <div class="h-12 bg-cl"></div>
       <div class="h-12 bg-fo"></div>
       <div class="picto h-20 bg-cl flex justify-center items-center relative">
         <%= image_tag 'pictos/wave.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-20 bg-fo flex justify-center items-center relative">
         <%= image_tag 'pictos/winda.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-20 bg-cl flex justify-center items-center relative">
         <%= image_tag 'pictos/windb.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-16 bg-fo flex justify-center items-center relative">
         <%= image_tag 'pictos/periode_houle.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
       <div class="picto h-20 bg-cl flex justify-center items-center relative">
         <%= image_tag 'pictos/weather.svg', class:"h-10" %>
         <div class="infos-block w-5 h-5 rounded-full border-gray-500 flex justify-center items-center text-gray-600 absolute">
-          <div class=" infos infos-hover roboto absolute bg-white py-3 w-48">Hauteur de vague</div>
-          <p class="text-xs text-gray-500">?</p>
+          <div class=" infos infos-hover roboto absolute bg-white p-3">Hauteur de vague</div>
+          <p class="text-xs font-bold text-gray-700">?</p>
         </div>
       </div>
     </div>
 
 
-    <div class="card-content flex flex-col flex-grow">
+    <div class="card-content flex flex-col">
       <div class="date h-12 flex items-center p-5">
         <p class="mont font-bold text-lg"><%= l day, format: "%A %e %B %Y" %></p>
       </div>
-      <div class="datas-content flex-grow flex text-center">
+      <div class="datas-content flex text-center">
 
-        <div class="datas flex flex-grow">
-          <div class="data grid grid-cols-6 flex-grow overflow-hidden">
+        <div class="datas flex">
+          <div class="data flex">
 
 
           <% @spot.forecasts.where(day: day.all_day).select {|f| f.day.hour >= 6}.each do |forecast| %>
@@ -56,7 +56,7 @@
 
               <% match = forecast.match?(params) %>
 
-              <div class="column <%= 'matching-forecast' if match%>">
+              <div class="column w-32 <%= 'matching-forecast' if match%>">
                 <p class="h-12 mont font-semibold flex items-center justify-center bg-cl"><%= forecast.day.strftime('%H:%M') %></p>
                 <p class="h-20 flex items-center justify-center"><%= forecast.min_wave_height %> <br> <%= forecast.max_wave_height %> m</p>
 

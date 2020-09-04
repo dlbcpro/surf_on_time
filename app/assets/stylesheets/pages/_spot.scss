@@ -24,7 +24,8 @@
 }
 
 .card-forecast{
-  max-width: 980px;
+  background-color: rgb(248, 248, 248);
+  width: auto;
 }
 
 
@@ -101,11 +102,19 @@
     border-radius: 5px;
   }
 }
+.infos{
+  color: black !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
 .school-content{
   padding: 0 !important;
 }
 .btn-card-school{
-  border: 1px solid #153351;
+    font-size: 16px;
+  &:hover{
+    background-color: rgba(21, 51, 81, 0.90);
+  }
   }
 .surf-school-title{
   color:  #153351;

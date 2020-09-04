@@ -41,8 +41,11 @@ document.addEventListener('turbolinks:load', () => {
   level();
   range();
   gliderc();
-  initMapbox();
   initFlatpickr();
+
+  initMapbox();
+
   AOS.init();
   initFilter();
+
 });

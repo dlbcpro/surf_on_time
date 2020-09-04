@@ -17,10 +17,9 @@
   <h1 class="mont text-6xl font-bold text-white"><%= @spot.name %></h1>
 </div>
 
-<div class="container mx-auto pt-8">
+
+<div class="container mx-auto pt-8 flex flex-col">
   <%= link_to "< Retour aux spots", spots_path(end: params[:end], max: params[:max], min: params[:min], start: params[:start]), class: "roboto p-5 text-gray-500 hover:text-gray-600" %>
-
-
 
 
 
@@ -71,18 +70,18 @@
                   <h3 class="surf-school-title mont text-xl font-semibold whitespace-no-wrap mb-2"><%= surf_school.name %></h3>
                   <p class="distance-surf roboto text-sm p-1 mb-2">à <%= distance_in_km(@spot, surf_school).round(2) %> km du spot</p>
                   <div class="flex">
-                    <%= image_tag 'pictos/planches.svg'%>
+                    <%= image_tag 'pictos/planchesb.svg', class: "h-6"%>
     <!-- prix planche -->
                     <p class="px-2 roboto font-light text-sm">à partir de 9€/2h</p>
                   </div>
                   <div class="flex p-1">
-                    <%= image_tag 'pictos/planches.svg' %>
+                    <%= image_tag 'pictos/planchesb.svg', class: "h-6" %>
                     <p class="px-2 roboto font-light text-sm"> + </p>
-                    <%= image_tag 'pictos/prof-surf.svg' %>
+                    <%= image_tag 'pictos/profb.svg', class: "h-6" %>
                     <p class="px-2 roboto font-light text-sm">à partir de 19€/2h</p>
                   </div>
                   <div class="flex justify-center">
-                    <%= link_to "Voir cette école", surf_school_path(@surf_schools.first), class: "btn-card-school mont flex items-center justify-center text-black rounded-md py-2 px-8 mt-6 font-normal w-40" %>
+                    <%= link_to "Voir cette école", surf_school_path(@surf_schools.first), class: "btn-card-school mont bc-bleu-f flex items-center justify-center text-white rounded-md h-10 w-48 mt-10 font-normal transition-all duration-500 ease-in-out text-left" %>
                   </div>
                 </div>
               </div>
