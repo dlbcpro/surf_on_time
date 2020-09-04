@@ -3,7 +3,7 @@
   <%= link_to spot_path(spot, start: params[:start], end: params[:end], min: params[:min], max: params[:max]) do %>
     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="spot-card shadow-lg rounded-lg hover:shadow-sm transition duration-500 ease-in-out">
       <div class="img-spot">
-        <%= image_tag 'divers/hossegor-graviere.jpg' %>
+        <%= image_tag(spot.image_url || 'divers/hossegor-graviere.jpg', class: 'w-full object-cover') %>
       </div>
       <div class="py-4 px-6">
         <p class="mont font-semibold text-xl bleu-f mb-2"><%= spot.name %></p>
