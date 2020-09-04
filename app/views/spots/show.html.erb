@@ -55,14 +55,14 @@
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 
 
-    <% @surf_schools.each do |surf_school| %>
-      <div id="surf-school-<%= surf_school.id %>"  class="surf-school-card absolute top-0 bottom-0 right-0 p-10 z-30 flex items-center">
+    <% @surf_schools.each_with_index do |surf_school, i| %>
+      <div id="surf-school-<%= surf_school.id %>"  class="surf-school-card absolute top-0 bottom-0 right-0 p-10 z-30 flex items-center" style="<%= 'display: none;' unless i.zero? %> ">
         <div class="card-content w-full h-full">
           <div class="container school-card mx-auto flex justify-end items-center my-auto h-full">
 
             <div class="card rounded-lg flex flex-col bg-white shadow-lg">
     <!-- image de l'école -->
-              <%= image_tag 'divers/Surftraining-web-2018-5bis 1.jpg', class: 'w-full' %>
+              <%= image_tag(surf_school.image_url || 'surftraining_web_2018_5bis_1.jpg', class: 'w-full') %>
               <div class="card-text flex-grow p-5">
 
 
