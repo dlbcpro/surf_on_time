@@ -19,7 +19,8 @@ class Importer
       msw_id: '38',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS-HOSSEGOR'
+      region: 'SOORTS-HOSSEGOR',
+      image_url: ''
     )
 
     Spot.create(
@@ -27,7 +28,8 @@ class Importer
       msw_id: '890',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOORTS-HOSSEGOR'
+      region: 'SOORTS-HOSSEGOR',
+      image_url: 'image_spot/les-estagnots.jpg'
     )
 
     Spot.create(
@@ -35,7 +37,8 @@ class Importer
       msw_id: '887',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'LANDES'
+      region: 'LANDES',
+      image_url: 'image_spot/moliets_plage_landes.jpg'
     )
 
     Spot.create(
@@ -43,7 +46,8 @@ class Importer
       msw_id: '64',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'LANDES'
+      region: 'LANDES',
+      image_url: 'image_spot/vieux_boucau_landes.jpg'
     )
 
     Spot.create(
@@ -51,7 +55,8 @@ class Importer
       msw_id: '72',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'FINISTERE-SOUTH'
+      region: 'FINISTERE-SOUTH',
+      image_url: 'image_spot/la_torche.jpg'
     )
 
     Spot.create(
@@ -59,7 +64,8 @@ class Importer
       msw_id: '5567',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'MANCHE'
+      region: 'MANCHE',
+      image_url: ''
     )
 
     Spot.create(
@@ -67,7 +73,8 @@ class Importer
       msw_id: '5553',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'MANCHE'
+      region: 'MANCHE',
+      image_url: ''
     )
 
     Spot.create(
@@ -75,7 +82,8 @@ class Importer
       msw_id: '74',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BRITTANY-NORTH'
+      region: 'BRITTANY-NORTH',
+      image_url: ''
     )
 
     Spot.create(
@@ -83,7 +91,8 @@ class Importer
       msw_id: '1520',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BRITTANY-NORTH'
+      region: 'BRITTANY-NORTH',
+      image_url: ''
     )
 
     Spot.create(
@@ -91,7 +100,8 @@ class Importer
       msw_id: '1557',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'MORBIHAN & LOIRE ATLANTIQUE'
+      region: 'MORBIHAN & LOIRE ATLANTIQUE',
+      image_url: ''
     )
 
     Spot.create(
@@ -99,7 +109,8 @@ class Importer
       msw_id: '1556',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'MORBIHAN & LOIRE ATLANTIQUE'
+      region: 'MORBIHAN & LOIRE ATLANTIQUE',
+      image_url: ''
     )
 
     Spot.create(
@@ -107,7 +118,8 @@ class Importer
       msw_id: '1570',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'VENDÉE'
+      region: 'VENDÉE',
+      image_url: ''
     )
 
     Spot.create(
@@ -115,7 +127,8 @@ class Importer
       msw_id: '4677',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'VENDÉE'
+      region: 'VENDÉE',
+      image_url: ''
     )
 
     ##############################################
@@ -125,7 +138,8 @@ class Importer
       msw_id: '5990',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'GIRONDE'
+      region: 'GIRONDE',
+      image_url: ''
     )
 
     Spot.create(
@@ -133,7 +147,8 @@ class Importer
       msw_id: '1535',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'GIRONDE'
+      region: 'GIRONDE',
+      image_url: 'image_spot/carcans.jpg'
     )
 
     Spot.create(
@@ -141,7 +156,8 @@ class Importer
       msw_id: '62',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BIARRITZ/ANGLET'
+      region: 'BIARRITZ/ANGLET',
+      image_url: 'image_spot/biarritz_grande_plage.jpg'
     )
 
     Spot.create(
@@ -149,7 +165,8 @@ class Importer
       msw_id: '894',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BIARRITZ/ANGLET'
+      region: 'BIARRITZ/ANGLET',
+      image_url: 'image_spot/cote_des_basques.jpg'
     )
 
     Spot.create(
@@ -157,7 +174,8 @@ class Importer
       msw_id: '1543',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'LA CÔTE BASQUE'
+      region: 'LA CÔTE BASQUE',
+      image_url: ''
     )
 
     Spot.create(
@@ -165,7 +183,8 @@ class Importer
       msw_id: '1540',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'LA CÔTE BASQUE'
+      region: 'LA CÔTE BASQUE',
+      image_url: ''
     )
 
     Spot.create(
@@ -173,7 +192,8 @@ class Importer
       msw_id: '3511',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'MEDITERRANEAN FRANCE-WEST'
+      region: 'MEDITERRANEAN FRANCE-WEST',
+      image_url: ''
     )
 
     Spot.create(
@@ -181,7 +201,8 @@ class Importer
       msw_id: '3523',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'MEDITERRANEAN FRANCE-WEST'
+      region: 'MEDITERRANEAN FRANCE-WEST',
+      image_url: ''
     )
 
     Spot.create(
@@ -189,7 +210,8 @@ class Importer
       msw_id: '3503',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOUTHERN FRANCE - EAST'
+      region: 'SOUTHERN FRANCE - EAST',
+      image_url: ''
     )
 
     Spot.create(
@@ -197,7 +219,8 @@ class Importer
       msw_id: '3495',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'SOUTHERN FRANCE - EAST'
+      region: 'SOUTHERN FRANCE - EAST',
+      image_url: ''
     )
 
     Spot.create(
@@ -205,7 +228,8 @@ class Importer
       msw_id: '896',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BIARRITZ/ANGLET'
+      region: 'BIARRITZ/ANGLET',
+      image_url: ''
     )
 
     Spot.create(
@@ -213,7 +237,8 @@ class Importer
       msw_id: '895',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'BIARRITZ/ANGLET'
+      region: 'BIARRITZ/ANGLET',
+      image_url: 'divers/hossegor-graviere.jpg.jpg'
     )
 
     Spot.create(
@@ -221,7 +246,8 @@ class Importer
       msw_id: '885',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'LANDES'
+      region: 'LANDES',
+      image_url: 'image_spot/cap_de_l_homy.jpg'
     )
 
     Spot.create(
@@ -229,7 +255,8 @@ class Importer
       msw_id: '1511',
       continent: 'EUROPE',
       country: 'FRANCE',
-      region: 'LA CÔTE BASQUE'
+      region: 'LA CÔTE BASQUE',
+      image_url: ''
     )
   end
 
