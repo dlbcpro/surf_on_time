@@ -25,36 +25,36 @@ true
 
       </div>
 
-      <div class="h-full w-full flex items-end">
+      <div class="h-full inline-flex items-end">
 
 
 
-        <div class="form-content rounded-md flex flex-col h-full w-full px-10 py-5">
+        <div class="form-content rounded-md inline-flex flex-col h-full px-10 py-5">
 
 
-          <h2 class="subtitle mont text-3xl font-light mb-10 text-white">Trouve en 2 clicks ton prochain surf trip avec les meilleures conditions</h2>
+          <h2 class="subtitle mont text-3xl font-light mb-20 text-white">Trouve en 2 clicks prochain surf trip  les meilleures conditions</h2>
 
 
-          <form class="form" action="<%= spots_path %>">
+          <form class="form inline form-home flex flex-col items-center" action="<%= spots_path %>">
 
 <!-- RANGE CACHé -->
-            <div class="range-slider">
+            <div class="range-slider w-2">
               <input id="rs-range-line" class="rs-range" type="hidden" value="0" min="0" max="4" step="0.1">
             </div>
 
 <!-- RANGE HAUTEUR -->
-            <div class="range-wave mb-5 flex flex-col justify-center">
-              <label class="text-white text-lg font-bold roboto leading-none">Selectionne ta vague</label>
-              <div class="px-10 pb-5 rounded-md ">
+            <div class="range-wave mb-5 inline-flex flex-col justify-center">
+              <label class="text-white text-lg font-semibold roboto leading-none">Selectionne ta vague</label>
+              <div class="px-3 pb-5 rounded-md ">
                 <input type="hidden" name="min" id="rangeMin" value="0">
                 <input type="hidden" name="max" id="rangeMax" value="1.5">
                 <div class="waves_range flex justify-between items-end">
-                  <%= image_tag 'pictos/wave_range.svg', class: "h-5" %>
+                  <%= image_tag 'pictos/wave_range2.svg', class: "h-3" %>
                   <%= image_tag 'pictos/wave_range.svg', class: "pictos-range-wave" %>
                 </div>
                 <input id="toto" class="rs-range mt-5 roboto text-white" type="range">
                 <p class="p flex justify-center">
-                  <span class="niveau text-white roboto py-1 px-8 mt-4 bc-bleu-t rounded-md">Expert</span>
+                  <span class="niveau text-white roboto py-1 px-8 mt-4 rounded-md">Expert</span>
                 </p>
 
               </div>
@@ -64,11 +64,11 @@ true
             </div>
 
 
-            <div class="date-choice flex flex-col">
-              <label class="text-white font-bold text-lg roboto">Selectionne tes dates</label>
+            <div class="date-choice inline-flex flex-col">
+              <label class="text-white font-semibold text-lg roboto mb-4">Selectionne tes dates</label>
               <div class="flex">
-                <input type="text" name="start" class="bc-bleu-t text-white bc-bleu-f start-date rounded-md mb-2 mr-2 ml-6 text-left pl-5 w-48 placeholder-home" placeholder="Du">
-                <input type="text" name="end" class="bc-bleu-t text-white bc-bleu-f end-date rounded-md mb-8 text-left pl-5 w-48 placeholder-home" placeholder="Au">
+                <input type="text" name="start" class="input-date-home text-white start-date rounded-md mb-2 mr-10 text-left pl-5 placeholder-home" placeholder="Du">
+                <input type="text" name="end" class="input-date-home text-white end-date rounded-md mb-8 text-left pl-5 placeholder-home" placeholder="Au">
               </div>
             </div>
 
@@ -76,11 +76,9 @@ true
 
 
 
-            <input type="submit" class="btn-find mont bc-bleu-t flex items-center justify-center text-white font-bold text-xl rounded-md h-12 w-56 mt-10 font-normal transition-all duration-500 ease-in-out text-left" value="Trouver un spot">
+            <input type="submit" class="btn-find mont bc-bleu-f inline-flex items-center justify-center text-white font-bold text-xl rounded-md h-12 w-56 mt-10 font-normal text-left" value="Trouver un spot">
 
           </form>
-
-
 
         </div>
       </div>
