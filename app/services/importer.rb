@@ -238,7 +238,7 @@ class Importer
       continent: 'EUROPE',
       country: 'FRANCE',
       region: 'BIARRITZ/ANGLET',
-      image_url: 'divers/hossegor-graviere.jpg.jpg'
+      image_url: 'image_spot/ilbarritz.jpg'
     )
 
     Spot.create(
