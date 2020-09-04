@@ -20,15 +20,18 @@
 }
 
 .form-content{
-  width: 420px;
-  background-color: rgba(63, 198, 162, 0.3);
+  background-color: rgba(63, 198, 162, 0.7);
 }
 
 
 
+.subtitle{
+  width: 470px !important;
+}
 
-
-
+.form-home{
+  width: 470px;
+}
 
 
 
@@ -59,7 +62,9 @@
   margin-top: 110px;
 }
 .btn-find:hover{
-  background-color: #153351;
+  cursor: pointer;
+  border: 2px solid white;
+  
 }
 
 .title-find{
@@ -120,14 +125,10 @@
 ///// range
 .range-wave {
   width: 470px;
-  background-color: rgba(134, 255, 223, 0.3);
-  padding: 15px;
   border-radius: 5px;
 }
 .date-choice{
   width: 470px;
-  background-color: rgba(134, 255, 223, 0.3);
-  padding: 15px;
   border-radius: 5px;
 }
 
@@ -175,4 +176,10 @@
 
 .pictos-range-wave{
   height: 30px;
+}
+
+.input-date-home{
+  border: 2px solid white;
+  background-color: transparent;
+  width: 215px;
 }
