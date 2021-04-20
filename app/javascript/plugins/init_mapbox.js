@@ -27,9 +27,8 @@ const initMapbox = () => {
           .setLngLat([ marker.lng, marker.lat ])
           .addTo(map);
 
-        mapboxMarker.getElement().addEventListener('click', () => {
+        mapboxMarker.getElement().addEventListener('mouseover', (e) => {
           // 1. Aller chercher la div qui correspond au marker
-
 
           // Hide all surf school cards
           document.querySelectorAll('.surf-school-card').forEach((card) => {

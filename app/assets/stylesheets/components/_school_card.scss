@@ -1,0 +1,15 @@
+.surf-school-card .card {
+  width: 350px;
+}
+
+.surf-school-card .card .school-pic {
+  height: 300px;
+  object-fit: cover;
+}
+
+.surf-school-card .card .text {
+  overflow: hidden;
+}
+.surf-school-card .card h3 {
+  text-overflow: ellipsis;
+}
